@@ -34,7 +34,6 @@ public class MenuPage extends ParentPage {
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(userIcon));
     }
 
-
     public void logIn(String name, String password) {
 
         clickOnElement(userIcon);

@@ -13,8 +13,6 @@ class DemoTest {
         ContactFormPage contactFormPage = menuPage.goToContactForm();
         contactFormPage.fillContactForm();
 
-
-
         menuPage.logOut();
     }
 }
