@@ -8,8 +8,8 @@ public class Init {
 
     public static WebDriver getDriver() {
 
-        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
-        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
 
         if(driver == null) {
             driver = new ChromeDriver();
