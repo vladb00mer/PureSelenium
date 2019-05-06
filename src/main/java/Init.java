@@ -8,8 +8,13 @@ public class Init {
 
     public static WebDriver getDriver() {
 
+
+        //MacOS driver
         //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
+
+        //Windows driver
         System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
+
 
         if(driver == null) {
             driver = new ChromeDriver();
