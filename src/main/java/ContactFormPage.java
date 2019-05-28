@@ -4,79 +4,80 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ContactFormPage extends MenuPage {
+class ContactFormPage extends MenuPage {
 
     @FindBy(xpath = "//form[@id='contact-form']//input[@id='name']")
-    private WebElement name;
+    private WebElement nameInput;
 
     @FindBy(xpath = "//input[@id='last-name']")
-    private WebElement lastName;
+    private WebElement lastNameInput;
 
     @FindBy(xpath = "//input[@id='position']")
-    private WebElement position;
+    private WebElement positionInput;
 
     @FindBy(xpath = "//input[@id='passport']")
-    private WebElement passport;
+    private WebElement passportInput;
 
     @FindBy(xpath = "//input[@id='passport-number']")
-    private WebElement passportNumber;
+    private WebElement passportNumberInput;
 
     @FindBy(xpath = "//input[@id='passport-seria']")
-    private WebElement passportSeria;
+    private WebElement passportSeriaInput;
 
     @FindBy(xpath = "//select[@id='gender']")
-    private WebElement gender;
+    private WebElement genderInput;
 
     @FindBy(xpath = "//input[@id='religion']")
-    private WebElement religion;
+    private WebElement religionInput;
 
     @FindBy(xpath = "//div[@id='weather']")
-    private WebElement weather;
+    private WebElement weatherInput;
 
     @FindBy(xpath = "//textarea[@id='description']")
-    private WebElement description;
+    private WebElement descriptionInput;
 
     @FindBy(xpath = "//label[contains(text(),'Accept conditions')]")
-    private WebElement acceptConditions;
+    private WebElement acceptConditionsButton;
 
     @FindBy(xpath = "//div[@id='summary-block']")
-    private WebElement summaryBlock;
+    private WebElement summaryBlockInput;
 
     @FindBy(xpath = "//button[contains(text(),'Calculate')]")
-    private WebElement calculate;
+    private WebElement calculateButton;
 
     @FindBy(xpath = "//button[contains(text(),'Submit')]")
-    private WebElement submit;
+    private WebElement submitButton;
 
 
-    public ContactFormPage() {
+    ContactFormPage() {
 
         PageFactory.initElements(Init.getDriver(), this);
-        new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(name));
+        new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(nameInput));
     }
 
-    public void fillContactForm() {
+    void fillContactForm(String name, String lastName, String position, String passportNumber,
+           String passportSeria, String religion, String weather, String description, String summary) {
 
-        setValue(name, "Username");
-        setValue(lastName, "Lastname");
-        setValue(position, "Position");
-        clickOnElement(passport);
-        setValue(passportNumber, "PassportNumber");
-        setValue(passportSeria, "PassportSeria");
+        setValue(nameInput, name);
+        setValue(lastNameInput, lastName);
+        setValue(positionInput, position);
+        clickOnElement(passportInput);
+        setValue(passportNumberInput, passportNumber);
+        setValue(passportSeriaInput, passportSeria);
 
         /* !defected element!
-        setSelectValue(gender, "Female");
+        setSelectValue(genderInput, "Female");
         */
 
-        setValue(religion, "Other");
-        setDropDownWithCheckBoxesValues(weather, 0,2);
+        setValue(religionInput, religion);
+        setDropDownWithCheckBoxesValues(weatherInput, weather);
 
-        setValue(description, "Description");
-        clickOnElement(acceptConditions);
+        setValue(descriptionInput, description);
+        clickOnElement(acceptConditionsButton);
 
-        setRadioButtons(3,6);
-        clickOnElement(calculate);
+        setRadioButtons(summary);
+        clickOnElement(calculateButton);
 
-        clickOnElement(submit);
+        clickOnElement(submitButton);
     }
 }

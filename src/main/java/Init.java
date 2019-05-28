@@ -1,19 +1,19 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Init {
+class Init {
 
     private static WebDriver driver;
     private static final int TIMEOUT = 5;
 
-    public static WebDriver getDriver() {
+    static WebDriver getDriver() {
 
 
         //MacOS driver
-        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
 
         //Windows driver
-        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
 
 
         if(driver == null) {
@@ -24,12 +24,12 @@ public class Init {
         return driver;
     }
 
-    public static int getTimeOut() {
+    static int getTimeOut() {
 
         return TIMEOUT;
     }
 
-    public static void closeDriver() {
+    static void closeDriver() {
 
         if(null != driver) {
             driver.quit();

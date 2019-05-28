@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public class ParentPage {
 
-    public void clickOnElement(WebElement element) {
+    void clickOnElement(WebElement element) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.elementToBeClickable(element));
 
@@ -22,7 +22,7 @@ public class ParentPage {
         }
     }
 
-    public void setValue(WebElement element, String value) {
+    void setValue(WebElement element, String value) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
@@ -37,7 +37,7 @@ public class ParentPage {
         }
     }
 
-    public String getValue(WebElement element) {
+    String getValue(WebElement element) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
@@ -60,16 +60,20 @@ public class ParentPage {
         }
     }
 
-    public void setDropDownWithCheckBoxesValues(WebElement element, int... values) {
+    void setDropDownWithCheckBoxesValues(WebElement element, String values) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
         element.click();
 
-        List<WebElement> allWalues = Init.getDriver().findElements(By.xpath("//a[@class='checkbox']/label"));
+        List<WebElement> allCheckBoxes = Init.getDriver().findElements(By.xpath("//a[@class='checkbox']/label"));
+        char[] valuesArray = values.toCharArray();
 
-        for (int i =0; i < values.length; i++) {
 
-            allWalues.get(values[i]).click();
+        for (char c : valuesArray) {
+
+            int index = Character.getNumericValue(c);
+
+            allCheckBoxes.get(index - 1).click();
         }
         try {
             Thread.sleep(1000);
@@ -78,13 +82,16 @@ public class ParentPage {
         }
     }
 
-    public void setRadioButtons(int... values) {
+    void setRadioButtons(String values) {
 
         List<WebElement> allWalues = Init.getDriver().findElements(By.xpath("//div[@class='info-panel-section']/section[@class='horizontal-group']/p[@class='radio']/label"));
+        char[] valuesArr = values.toCharArray();
 
-        for (int i =0; i < values.length; i++) {
+        for (char c : valuesArr) {
 
-            allWalues.get(values[i]).click();
+            int index = Character.getNumericValue(c);
+
+            allWalues.get(index - 1).click();
         }
         try {
             Thread.sleep(1000);
