@@ -21,15 +21,15 @@ class DemoTest {
     @Test()
     void allFieldsTest() {
 
-        contactFormPage.fillContactForm("name", "lastName", "position", "1234567890",
-                "0987654321", "Induism", "13", "description", "38");
+        contactFormPage.fillContactForm("name", "lastName", "position", "uncheck",
+                "0987654321", "1234567890", "Female", "Other", "Sun, Weather", "description", "check");
     }
 
     @Test
     void textFieldsTest() {
 
-        contactFormPage.fillContactForm("name", "lastName", "position", "1234567890",
-                "0987654321", "", "", "description", "");
+        contactFormPage.fillContactForm("name", "lastName", "position", "check",
+                "1234567890", "0987654321", "Male", "Induism", "Rain, Snow", "description", "uncheck");
     }
 
     @AfterEach

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ParentPage {
+class ParentPage {
 
     void clickOnElement(WebElement element) {
 
@@ -45,13 +45,25 @@ public class ParentPage {
         return element.getText();
     }
 
-    public void setSelectValue(WebElement element, String value) {
+    void setCheckBox(WebElement element, String value) {
+
+        if ((value.equalsIgnoreCase("check")) && (!element.isSelected()))
+            element.click();
+        else if ((value.equalsIgnoreCase("uncheck")) && (element.isSelected()))
+            element.click();
+    }
+
+    void setSelectValue(WebElement element, String value) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
-        Select select = new Select(element);
-        select.selectByValue(value);
-        select.selectByVisibleText(value);
+        element.click();
+
+        WebElement nested = Init.getDriver().findElement(By.xpath("//select[@id='gender']/option[contains(text(),"+value+")]"));
+
+        new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(nested));
+
+        nested.click();
 
         try {
             Thread.sleep(1000);
@@ -66,15 +78,12 @@ public class ParentPage {
         element.click();
 
         List<WebElement> allCheckBoxes = Init.getDriver().findElements(By.xpath("//a[@class='checkbox']/label"));
-        char[] valuesArray = values.toCharArray();
 
+        if(values.contains("Sun")) allCheckBoxes.get(1).click();
+        else if (values.contains("Rain")) allCheckBoxes.get(2).click();
+        else if (values.contains("Weather")) allCheckBoxes.get(3).click();
+        else if (values.contains("Snow")) allCheckBoxes.get(4).click();
 
-        for (char c : valuesArray) {
-
-            int index = Character.getNumericValue(c);
-
-            allCheckBoxes.get(index - 1).click();
-        }
         try {
             Thread.sleep(1000);
         } catch (InterruptedException ex) {

@@ -37,7 +37,7 @@ class ContactFormPage extends MenuPage {
     private WebElement descriptionInput;
 
     @FindBy(xpath = "//label[contains(text(),'Accept conditions')]")
-    private WebElement acceptConditionsButton;
+    private WebElement acceptConditionsInput;
 
     @FindBy(xpath = "//div[@id='summary-block']")
     private WebElement summaryBlockInput;
@@ -55,28 +55,21 @@ class ContactFormPage extends MenuPage {
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(nameInput));
     }
 
-    void fillContactForm(String name, String lastName, String position, String passportNumber,
-           String passportSeria, String religion, String weather, String description, String summary) {
+    void fillContactForm(String name, String lastName, String position, String passport, String passportNumber, String passportSeria,
+                         String gender, String religion, String weather, String description, String acceptConditions) {
 
         setValue(nameInput, name);
         setValue(lastNameInput, lastName);
         setValue(positionInput, position);
-        clickOnElement(passportInput);
+        setCheckBox(passportInput, passport);
         setValue(passportNumberInput, passportNumber);
         setValue(passportSeriaInput, passportSeria);
-
-        /* !defected element!
-        setSelectValue(genderInput, "Female");
-        */
-
+        setSelectValue(genderInput, gender);
         setValue(religionInput, religion);
         setDropDownWithCheckBoxesValues(weatherInput, weather);
 
         setValue(descriptionInput, description);
-        clickOnElement(acceptConditionsButton);
-
-        setRadioButtons(summary);
-        clickOnElement(calculateButton);
+        setCheckBox(acceptConditionsInput, acceptConditions);
 
         clickOnElement(submitButton);
     }
