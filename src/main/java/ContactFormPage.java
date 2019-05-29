@@ -67,10 +67,8 @@ class ContactFormPage extends MenuPage {
         setSelectValue(genderInput, gender);
         setValue(religionInput, religion);
         setDropDownWithCheckBoxesValues(weatherInput, weather);
-
         setValue(descriptionInput, description);
         setCheckBox(acceptConditionsInput, acceptConditions);
-
         clickOnElement(submitButton);
     }
 }
