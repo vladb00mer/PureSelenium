@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ContactFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ContactFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ParentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ContactFormPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ContactFormPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ParentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ParentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DemoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,16 +24,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ParentPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+            <state relative-caret-position="353">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Init.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
@@ -53,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ContactFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
+            <state relative-caret-position="770">
               <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
+            <state relative-caret-position="360">
+              <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,9 +95,9 @@
         <option value="$PROJECT_DIR$/src/main/java/MenuPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Init.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ContactFormPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/DemoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ParentPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ContactFormPage.java" />
       </list>
     </option>
   </component>
@@ -311,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559131194445</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="setSelectValue(): modified and tested - ok&#10;setDropDownWithCheckBoxesValues(): modified and tested - ok">
+      <created>1559132635988</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559132635988</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -348,9 +350,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="293" y="21" width="1627" height="1059" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948293" visible="true" weight="0.15962145" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948293" visible="true" weight="0.15962145" />
       <window_info id="Structure" order="1" sideWeight="0.5005171" side_tool="true" weight="0.21576227" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,13 +360,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5005171" side_tool="true" weight="0.21576227" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885212" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32885212" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.499354" weight="0.32988626" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500646" side_tool="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500646" side_tool="true" weight="0.32885212" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32988626" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32988626" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -384,7 +385,8 @@
     <MESSAGE value="ready to work under Windows" />
     <MESSAGE value="Make fillContactForm method more Generic. That means it depends on data input&#10;Develop one more test in the same test class that fills only text fields in the Contact form&#10;Move common parts of both tests like PO init and log in separately" />
     <MESSAGE value="setCheckBox() added and tested - ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="setCheckBox() added and tested - ok" />
+    <MESSAGE value="setSelectValue(): modified and tested - ok&#10;setDropDownWithCheckBoxesValues(): modified and tested - ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="setSelectValue(): modified and tested - ok&#10;setDropDownWithCheckBoxesValues(): modified and tested - ok" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -396,33 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ContactFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -446,6 +421,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ContactFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Init.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -453,6 +448,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ParentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
