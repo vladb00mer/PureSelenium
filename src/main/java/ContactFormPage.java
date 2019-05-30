@@ -39,14 +39,8 @@ class ContactFormPage extends MenuPage {
     @FindBy(xpath = "//textarea[@id='description']")
     private WebElement descriptionInput;
 
-    @FindBy(xpath = "//label[contains(text(),'Accept conditions')]")
+    @FindBy(xpath = "//input[@id='accept-conditions']")
     private WebElement acceptConditionsInput;
-
-    @FindBy(xpath = "//div[@id='summary-block']")
-    private WebElement summaryBlockInput;
-
-    @FindBy(xpath = "//button[contains(text(),'Calculate')]")
-    private WebElement calculateButton;
 
     @FindBy(xpath = "//button[contains(text(),'Submit')]")
     private WebElement submitButton;

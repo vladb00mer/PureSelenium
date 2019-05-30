@@ -28,14 +28,14 @@ class DemoTest {
                     () -> assertEquals("name", contactFormPage.getName()),
                     () -> assertEquals("lastName", contactFormPage.getLastName()),
                     () -> assertEquals("position", contactFormPage.getPosition()),
-                    () -> assertEquals("Unchecked", contactFormPage.getPassport()),
+                    () -> assertEquals("unchecked", contactFormPage.getPassport()),
                     () -> assertEquals("0987654321", contactFormPage.getNumber()),
                     () -> assertEquals("1234567890", contactFormPage.getSeria()),
                     () -> assertEquals("Female", contactFormPage.getGender()),
                     () -> assertEquals("Other", contactFormPage.getReligion()),
                     () -> assertEquals("Sun, Weather", contactFormPage.getWeather()),
                     () -> assertEquals("description", contactFormPage.getDescription()),
-                    () -> assertEquals("Unchecked", contactFormPage.getAcceptConditions())
+                    () -> assertEquals("checked", contactFormPage.getAcceptConditions())
                 );
 
         contactFormPage.submitForm();
@@ -51,14 +51,14 @@ class DemoTest {
                     () -> assertEquals("name", contactFormPage.getName()),
                     () -> assertEquals("lastName", contactFormPage.getLastName()),
                     () -> assertEquals("position", contactFormPage.getPosition()),
-                    () -> assertEquals("Checked", contactFormPage.getPassport()),
+                    () -> assertEquals("checked", contactFormPage.getPassport()),
                     () -> assertEquals("1234567890", contactFormPage.getNumber()),
                     () -> assertEquals("0987654321", contactFormPage.getSeria()),
                     () -> assertEquals("Male", contactFormPage.getGender()),
                     () -> assertEquals("Induism", contactFormPage.getReligion()),
                     () -> assertEquals("Rain, Snow", contactFormPage.getWeather()),
                     () -> assertEquals("description", contactFormPage.getDescription()),
-                    () -> assertEquals("Unchecked", contactFormPage.getAcceptConditions())
+                    () -> assertEquals("unchecked", contactFormPage.getAcceptConditions())
                 );
 
         contactFormPage.submitForm();

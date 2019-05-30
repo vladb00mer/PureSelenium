@@ -58,8 +58,8 @@ class ParentPage {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
-        if(element.isSelected()) return "Checked";
-        else return "Unchecked";
+        if(element.isSelected()) return "checked";
+        else return "unchecked";
     }
 
     void setSelectValue(WebElement element, String value) {
