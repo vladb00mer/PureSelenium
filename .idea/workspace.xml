@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="add validation tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ContactFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ContactFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ParentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,23 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ParentPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Init.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="381">
+              <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -48,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ContactFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
+            <state relative-caret-position="298">
+              <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +51,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+            <state relative-caret-position="555">
+              <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MenuPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,12 +95,12 @@
         <option value="$PROJECT_DIR$/src/test/java/MainPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SelemiunAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MenuPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Init.java" />
         <option value="$PROJECT_DIR$/src/main/java/ContactFormPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DemoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ParentPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DemoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MenuPage.java" />
       </list>
     </option>
   </component>
@@ -224,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in PureSelenium">
+  <component name="RunManager" selected="JUnit.DemoTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PureSelenium" />
@@ -240,8 +243,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PureSelenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest.allFieldsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PureSelenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoTest" />
+      <option name="METHOD_NAME" value="allFieldsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTest" />
+        <item itemvalue="JUnit.DemoTest.allFieldsTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -313,45 +337,53 @@
       <option name="project" value="LOCAL" />
       <updated>1559132635988</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add .gitignore">
+      <created>1559135176812</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559135176812</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_PureSelenium - 2019.05.28 at 17h 49m 19s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest_allFieldsTest - 2019.05.30 at 10h 45m 53s.xml">
+      <configuration name="DemoTest.allFieldsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.28 at 17h 51m 28s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest_allFieldsTest - 2019.05.30 at 10h 47m 08s.xml">
+      <configuration name="DemoTest.allFieldsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.28 at 17h 54m 42s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest_allFieldsTest - 2019.05.30 at 10h 49m 38s.xml">
+      <configuration name="DemoTest.allFieldsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 12h 29m 09s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest - 2019.05.30 at 10h 50m 50s.xml">
+      <configuration name="DemoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 14h 54m 59s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest - 2019.05.30 at 11h 05m 09s.xml">
+      <configuration name="DemoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 14h 57m 27s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest - 2019.05.30 at 11h 10m 21s.xml">
+      <configuration name="DemoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 15h 07m 08s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest - 2019.05.30 at 11h 20m 04s.xml">
+      <configuration name="DemoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 15h 11m 04s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest - 2019.05.30 at 11h 22m 50s.xml">
+      <configuration name="DemoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 15h 13m 04s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest_allFieldsTest - 2019.05.30 at 11h 26m 28s.xml">
+      <configuration name="DemoTest.allFieldsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_PureSelenium - 2019.05.29 at 15h 20m 30s.xml">
-      <configuration name="All in PureSelenium" configurationId="JUnit" />
+    <history-entry file="DemoTest - 2019.05.30 at 11h 27m 35s.xml">
+      <configuration name="DemoTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="293" y="21" width="1627" height="1059" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948293" visible="true" weight="0.15962145" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948293" visible="true" weight="0.1615142" />
       <window_info id="Structure" order="1" sideWeight="0.5005171" side_tool="true" weight="0.21576227" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,7 +418,9 @@
     <MESSAGE value="Make fillContactForm method more Generic. That means it depends on data input&#10;Develop one more test in the same test class that fills only text fields in the Contact form&#10;Move common parts of both tests like PO init and log in separately" />
     <MESSAGE value="setCheckBox() added and tested - ok" />
     <MESSAGE value="setSelectValue(): modified and tested - ok&#10;setDropDownWithCheckBoxesValues(): modified and tested - ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="setSelectValue(): modified and tested - ok&#10;setDropDownWithCheckBoxesValues(): modified and tested - ok" />
+    <MESSAGE value="add .gitignore" />
+    <MESSAGE value="add validation tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add validation tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -401,43 +435,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar!/org/junit/jupiter/api/Assertions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="314">
+          <caret line="572" column="23" selection-start-line="572" selection-start-column="23" selection-end-line="572" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#19260#19261#0" expanded="true" />
+            <element signature="e#19319#19320#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MenuPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar!/org/junit/jupiter/api/function/Executable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ContactFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -451,10 +463,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ContactFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ParentPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="381">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MenuPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

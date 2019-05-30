@@ -41,16 +41,25 @@ class ParentPage {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
-        element.click();
-        return element.getText();
+        return element.getAttribute("value");
     }
 
     void setCheckBox(WebElement element, String value) {
+
+        new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
         if ((value.equalsIgnoreCase("check")) && (!element.isSelected()))
             element.click();
         else if ((value.equalsIgnoreCase("uncheck")) && (element.isSelected()))
             element.click();
+    }
+
+    String getCheckBox(WebElement element) {
+
+        new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
+
+        if(element.isSelected()) return "Checked";
+        else return "Unchecked";
     }
 
     void setSelectValue(WebElement element, String value) {

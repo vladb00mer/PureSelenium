@@ -33,6 +33,9 @@ class ContactFormPage extends MenuPage {
     @FindBy(xpath = "//div[@id='weather']")
     private WebElement weatherInput;
 
+    @FindBy(xpath = "//div[@id='weather']//button[@data-toggle='dropdown']")
+    private WebElement weatherOutput;
+
     @FindBy(xpath = "//textarea[@id='description']")
     private WebElement descriptionInput;
 
@@ -69,6 +72,65 @@ class ContactFormPage extends MenuPage {
         setDropDownWithCheckBoxesValues(weatherInput, weather);
         setValue(descriptionInput, description);
         setCheckBox(acceptConditionsInput, acceptConditions);
+    }
+
+    void submitForm() {
+
         clickOnElement(submitButton);
+    }
+
+    String getName() {
+
+        return getValue(nameInput);
+    }
+
+    String getLastName() {
+
+        return getValue(lastNameInput);
+    }
+
+    String getPosition() {
+
+        return getValue(positionInput);
+    }
+
+    String getPassport() {
+
+        return getCheckBox(passportInput);
+    }
+
+    String getNumber() {
+
+        return getValue(passportNumberInput);
+    }
+
+    String getSeria() {
+
+        return getValue(passportSeriaInput);
+    }
+
+    String getGender() {
+
+        return getValue(genderInput);
+    }
+
+    String getReligion() {
+
+        return getValue(religionInput);
+    }
+
+    String getWeather() {
+
+        return weatherOutput.getText();
+    }
+
+    String getDescription() {
+
+        return getValue(descriptionInput);
+    }
+
+    String getAcceptConditions() {
+
+        return getCheckBox(acceptConditionsInput);
     }
 }
