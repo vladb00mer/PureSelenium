@@ -44,21 +44,16 @@ class DemoTest {
     @Test
     void textFieldsTest() {
 
-        contactFormPage.fillContactForm("name", "lastName", "position", "check", "1234567890",
-                "0987654321", "Male", "Induism", "Snow, Rain", "description", "uncheck");
+        contactFormPage.fillContactForm("name", "lastName", "position", "", "1234567890",
+                "0987654321", "", "", "", "description", "");
 
         assertAll("validation",
                     () -> assertEquals("name", contactFormPage.getName()),
                     () -> assertEquals("lastName", contactFormPage.getLastName()),
                     () -> assertEquals("position", contactFormPage.getPosition()),
-                    () -> assertEquals("checked", contactFormPage.getPassport()),
                     () -> assertEquals("1234567890", contactFormPage.getNumber()),
                     () -> assertEquals("0987654321", contactFormPage.getSeria()),
-                    () -> assertEquals("Male", contactFormPage.getGender()),
-                    () -> assertEquals("Induism", contactFormPage.getReligion()),
-                    () -> assertEquals("Rain, Snow", contactFormPage.getWeather()),
-                    () -> assertEquals("description", contactFormPage.getDescription()),
-                    () -> assertEquals("unchecked", contactFormPage.getAcceptConditions())
+                    () -> assertEquals("description", contactFormPage.getDescription())
                 );
 
         contactFormPage.submitForm();
