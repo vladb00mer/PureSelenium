@@ -8,7 +8,7 @@ public class Init {
     private static WebDriver driver;
     private static final int TIMEOUT = 5;
 
-    public static WebDriver getDriver() {
+    public static WebDriver getWebDriver() {
 
 
         //MacOS driver

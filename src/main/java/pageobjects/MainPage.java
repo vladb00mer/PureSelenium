@@ -10,18 +10,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainPage extends ParentPage {
 
-    @FindBy(xpath = "//a[contains(text(),'JDI Github')]")
-    private WebElement jdiGitHubLink;
+    @FindBy(xpath = "//a[@aria-label='Knection']")
+    private WebElement knectionLink;
 
-    public MainPage() {
+    @FindBy(xpath = "//a[@title='View All Project']")
+    private WebElement viewAllProjects;
 
-        Init.getDriver().navigate().to("https://jdi-testing.github.io/jdi-light/index.html");
-        PageFactory.initElements(Init.getDriver(), this);
-        new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(jdiGitHubLink));
+
+    public MainPage(String user) {
+
+        Init.getWebDriver().navigate().to("http://ecsc00a0154c.epam.com:82/Home?ssoUserId="+user);
+        PageFactory.initElements(Init.getWebDriver(), this);
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
     }
 
-    public MenuPage goToMenu() {
+    public TopMenuPage goToTopMenu() {
 
-        return new MenuPage();
+        return new TopMenuPage();
     }
 }
