@@ -15,12 +15,6 @@ public class ParentPage {
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ParentPage.class.getName()).log(Level.SEVERE, "WARNING!", ex);
-        }
     }
 
     protected void setValue(WebElement element, String value) {
@@ -30,12 +24,6 @@ public class ParentPage {
         element.click();
         element.clear();
         element.sendKeys(value);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ParentPage.class.getName()).log(Level.SEVERE, "WARNING!", ex);
-        }
     }
 
     String getValue(WebElement element) {
@@ -74,12 +62,6 @@ public class ParentPage {
             allValues.get(0).click();
         else if(value.equalsIgnoreCase("female"))
             allValues.get(1).click();
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ParentPage.class.getName()).log(Level.SEVERE, "WARNING!", ex);
-        }
     }
 
     void setDropDownWithCheckBoxesValues(WebElement element, String values) {
@@ -97,11 +79,5 @@ public class ParentPage {
             allCheckBoxes.get(2).click();
         if (values.contains("Snow"))
             allCheckBoxes.get(3).click();
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ParentPage.class.getName()).log(Level.SEVERE, "WARNING!", ex);
-        }
     }
 }
