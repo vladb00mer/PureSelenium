@@ -1,15 +1,16 @@
+package common;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class ParentPage {
+public class ParentPage {
 
-    void clickOnElement(WebElement element) {
+    protected void clickOnElement(WebElement element) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.elementToBeClickable(element));
 
@@ -22,7 +23,7 @@ class ParentPage {
         }
     }
 
-    void setValue(WebElement element, String value) {
+    protected void setValue(WebElement element, String value) {
 
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 

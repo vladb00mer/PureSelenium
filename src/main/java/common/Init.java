@@ -1,12 +1,14 @@
+package common;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-class Init {
+public class Init {
 
     private static WebDriver driver;
     private static final int TIMEOUT = 5;
 
-    static WebDriver getDriver() {
+    public static WebDriver getDriver() {
 
 
         //MacOS driver
@@ -24,12 +26,12 @@ class Init {
         return driver;
     }
 
-    static int getTimeOut() {
+    public static int getTimeOut() {
 
         return TIMEOUT;
     }
 
-    static void closeDriver() {
+    public static void closeDriver() {
 
         if(null != driver) {
             driver.quit();

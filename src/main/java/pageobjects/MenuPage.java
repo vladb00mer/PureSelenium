@@ -1,10 +1,14 @@
+package pageobjects;
+
+import common.Init;
+import common.ParentPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-class MenuPage extends ParentPage {
+public class MenuPage extends ParentPage {
 
     @FindBy(xpath = "//div[@class='profile-photo']/img[@id='user-icon']")
     private WebElement userIcon;
@@ -34,7 +38,7 @@ class MenuPage extends ParentPage {
         new WebDriverWait(Init.getDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(userIcon));
     }
 
-    void logIn(String name, String password) {
+    public void logIn(String name, String password) {
 
         clickOnElement(userIcon);
         setValue(userName, name);
@@ -52,11 +56,5 @@ class MenuPage extends ParentPage {
     String getLoggedUser() {
 
         return userLoggedIn.getText();
-    }
-
-    ContactFormPage goToContactForm() {
-
-        clickOnElement(contactForm);
-        return new ContactFormPage();
     }
 }
