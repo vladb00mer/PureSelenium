@@ -2,6 +2,8 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Init {
 
@@ -17,10 +19,13 @@ public class Init {
         //Windows driver
         //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+        options.addArguments("--start-maximized");
+        options.addArguments("disable-infobars");
 
         if(driver == null) {
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
+            driver = new ChromeDriver(options);
         }
 
         return driver;
