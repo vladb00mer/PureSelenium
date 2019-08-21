@@ -2,8 +2,6 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Init {
 
@@ -14,18 +12,15 @@ public class Init {
 
 
         //MacOS driver
-        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
 
         //Windows driver
-        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
-        options.addArguments("--start-maximized");
-        options.addArguments("disable-infobars");
 
         if(driver == null) {
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
+            driver.manage().window().maximize();
         }
 
         return driver;

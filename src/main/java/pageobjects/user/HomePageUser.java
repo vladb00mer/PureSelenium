@@ -33,7 +33,11 @@ public class HomePageUser extends ParentPage {
     private WebElement selectDateRange;
 
 
-    public HomePageUser() {}
+    HomePageUser() {
+
+        PageFactory.initElements(Init.getWebDriver(), this);
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
+    }
 
     public HomePageUser(String user) {
 
@@ -53,18 +57,21 @@ public class HomePageUser extends ParentPage {
         setTextValue(searchByName, name);
         return this;
     }
+
     public HomePageUser filterByProjectCode(String code) {
 
         clickOnElement(searchByProjectCode);
         setTextValue(searchByProjectCode, code);
         return this;
     }
+
     public HomePageUser filterByApiId(String apiId) {
 
         clickOnElement(searchByName);
         setTextValue(searchByApiId, apiId);
         return this;
     }
+
     public HomePageUser filterByLastUpdated(String date) {
 
         clickOnElement(selectDateRange);
@@ -72,7 +79,7 @@ public class HomePageUser extends ParentPage {
         return this;
     }
 
-    public ProjectPageUser openProject(String project) {
+    public ProjectPageUser openFilteredProject() {
 
         List<WebElement> projectNames = Init.getWebDriver().findElements(By.xpath("//td[@data-title-text='Project Name']/div/a"));
         projectNames.get(0).click();

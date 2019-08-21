@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/user/ProjectPageUser.java" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="demo test ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ParentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/user/MainMenuPageUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/user/HomePageUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/TopMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/user/TopMenuPageUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/user/HomePageUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/user/HomePageUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/user/ProjectPageUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/user/ProjectPageUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in PureSelenium">
+  <component name="RunManager" selected="JUnit.DemoTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PureSelenium" />
@@ -110,12 +108,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.All in PureSelenium" />
+      <item itemvalue="JUnit.DemoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -236,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566398093527</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="working with controls">
+      <created>1566402784274</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1566402784275</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +280,9 @@
     <MESSAGE value="cleaned" />
     <MESSAGE value="up and left menu almost done" />
     <MESSAGE value="up and left menu done" />
-    <option name="LAST_COMMIT_MESSAGE" value="up and left menu done" />
+    <MESSAGE value="working with controls" />
+    <MESSAGE value="demo test ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo test ready" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
