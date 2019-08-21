@@ -1,19 +1,19 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pageobjects.MainPage;
-import pageobjects.MainMenuPage;
+import pageobjects.user.HomePageUser;
+import pageobjects.user.MainMenuPageUser;
 
 
 class DemoTest {
 
-    private MainPage mainPage;
-    private MainMenuPage mainMenuPage;
+    private HomePageUser homePageUser;
+    private MainMenuPageUser mainMenuPageUser;
 
     @BeforeEach
     void setUp() {
 
-        mainPage = new MainPage("Administrator");
+        homePageUser = new HomePageUser("Administrator");
     }
 
     @Test
@@ -29,6 +29,6 @@ class DemoTest {
     @AfterEach
     void tearDown() {
 
-        mainPage = null;
+        homePageUser = null;
     }
 }

@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.user;
 
 import common.Init;
 import common.ParentPage;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-public class MainMenuPage extends ParentPage {
+public class MainMenuPageUser extends ParentPage {
 
     @FindBy(xpath = "//a[@title='Dashboard']")
     private WebElement leftMenuDashboard;
@@ -39,7 +39,7 @@ public class MainMenuPage extends ParentPage {
     private WebElement leftMenuProfileSettings;
 
 
-    MainMenuPage() {
+    MainMenuPageUser() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(leftMenuProfileSettings));
@@ -75,10 +75,10 @@ public class MainMenuPage extends ParentPage {
     }
     public String getUserName() {
 
-        return getValue(leftMenuUserName);
+        return getTextValue(leftMenuUserName);
     }
     public String getUserDepartment() {
 
-        return getValue(leftMenuDepartment);
+        return getTextValue(leftMenuDepartment);
     }
 }

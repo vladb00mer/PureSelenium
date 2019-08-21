@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.user;
 
 import common.Init;
 import common.ParentPage;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-public class TopMenuPage extends ParentPage {
+public class TopMenuPageUser extends ParentPage {
 
     @FindBy(xpath = "//button[@aria-label='Menu']")
     private WebElement mainMenuButton;
@@ -33,24 +33,31 @@ public class TopMenuPage extends ParentPage {
     private WebElement calendar;
 
 
-    TopMenuPage() {
+    TopMenuPageUser() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
     }
 
-    public MainMenuPage goToMainMenu() {
+    public MainMenuPageUser goToMainMenu() {
 
-        return new MainMenuPage();
+        clickOnElement(mainMenuButton);
+        return new MainMenuPageUser();
     }
     public void searchWorkSpaces(String workspace) {
 
         clickOnElement(searchArea);
-        setValue(searchArea, workspace);
+        setTextValue(searchArea, workspace);
         clickOnElement(submitSearch);
     }
     public void selectProject(String project) {
 
         clickOnElement(projectDropDown);
+    }
+
+    public HomePageUser goToHomePage() {
+
+        clickOnElement(knectionLink);
+        return new HomePageUser();
     }
 }

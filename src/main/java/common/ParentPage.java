@@ -14,7 +14,7 @@ public class ParentPage {
         element.click();
     }
 
-    protected void setValue(WebElement element, String value) {
+    protected void setTextValue(WebElement element, String value) {
 
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
@@ -23,7 +23,7 @@ public class ParentPage {
         element.sendKeys(value);
     }
 
-    protected String getValue(WebElement element) {
+    protected String getTextValue(WebElement element) {
 
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
