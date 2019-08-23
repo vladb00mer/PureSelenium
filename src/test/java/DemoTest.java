@@ -6,13 +6,12 @@ import pageobjects.ProjectPage;
 
 class DemoTest {
 
-    private HomePage homePage;
+    private static HomePage homePage;
     private ProjectPage projectPage;
     private String projectName = "123456789";
 
-    @BeforeEach
-    void setUp() {
-
+    @BeforeAll
+    static void setUp() {
         homePage = new HomePage("nadezda_peskun@epam.com");
     }
 
@@ -37,9 +36,8 @@ class DemoTest {
         Assertions.assertEquals(projectPage.getName(), projectName);
     }
 
-    @AfterEach
-    void tearDown() {
-
+    @AfterAll
+    static void tearDown() {
         Init.closeDriver();
         homePage = null;
     }
