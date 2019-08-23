@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/AllProjectsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ProjectPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -263,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566549482705</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="additional demo tests are ready">
+      <created>1566552353630</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566552353630</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

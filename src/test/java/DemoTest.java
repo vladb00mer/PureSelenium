@@ -3,7 +3,6 @@ import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
 import pageobjects.ProjectPage;
 
-
 class DemoTest {
 
     private static HomePage homePage;
@@ -18,21 +17,36 @@ class DemoTest {
     @Test
     @Tag("priority1")
     void testSearchByProjectNameFilter() {
-        projectPage = homePage.goToTopMenu().goToHomePage().filterByProjectName(projectName).openFilteredProject();
+        projectPage = homePage.
+                goToTopMenu().
+                goToHomePage().
+                filterByProjectName(projectName).
+                openFilteredProject();
+
         Assertions.assertEquals(projectPage.getName(), projectName);
     }
 
     @Test
     @Tag("priority2")
     void testSearchByProjectCodeFilter() {
-        projectPage = homePage.goToTopMenu().goToHomePage().filterByProjectCode(projectName).openFilteredProject();
+        projectPage = homePage.
+                goToTopMenu().
+                goToHomePage().
+                filterByProjectCode(projectName).
+                openFilteredProject();
+
         Assertions.assertEquals(projectPage.getName(), projectName);
     }
 
     @Test
     @Tag("priority3")
     void testSearchByApiIdFilter() {
-        projectPage = homePage.goToTopMenu().goToHomePage().filterByApiId(projectName).openFilteredProject();
+        projectPage = homePage.
+                goToTopMenu().
+                goToHomePage().
+                filterByApiId(projectName).
+                openFilteredProject();
+
         Assertions.assertEquals(projectPage.getName(), projectName);
     }
 

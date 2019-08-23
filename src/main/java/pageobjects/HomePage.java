@@ -14,8 +14,8 @@ import java.util.List;
 
 public class HomePage extends ParentPage {
 
-    @FindBy(xpath = "//a[@aria-label='Knection']")
-    private WebElement knectionLink;
+    @FindBy(xpath = "//span[contains(text(), 'My Projects ')]")
+    private WebElement myProjectsHeader;
 
     @FindBy(xpath = "//a[@title='View All Project']")
     private WebElement viewAllProjects;
@@ -36,14 +36,14 @@ public class HomePage extends ParentPage {
     HomePage() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
-        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(myProjectsHeader));
     }
 
     public HomePage(String user) {
 
         Init.getWebDriver().navigate().to("http://ecsc00a0154c.epam.com:82/Home?ssoUserId="+user);
         PageFactory.initElements(Init.getWebDriver(), this);
-        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(myProjectsHeader));
     }
 
     public TopMenuPage goToTopMenu() {
@@ -61,7 +61,6 @@ public class HomePage extends ParentPage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         return this;
     }
 
@@ -75,7 +74,6 @@ public class HomePage extends ParentPage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         return this;
     }
 
@@ -89,7 +87,6 @@ public class HomePage extends ParentPage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         return this;
     }
 
@@ -103,7 +100,6 @@ public class HomePage extends ParentPage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         return this;
     }
 
@@ -113,5 +109,11 @@ public class HomePage extends ParentPage {
         projectNames.get(0).click();
 
         return new ProjectPage();
+    }
+
+    public AllProjectsPage goToAllProjects() {
+
+        clickOnElement(viewAllProjects);
+        return new AllProjectsPage();
     }
 }
