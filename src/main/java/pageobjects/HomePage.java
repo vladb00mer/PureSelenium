@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-
 public class HomePage extends ParentPage {
 
     @FindBy(xpath = "//span[contains(text(), 'My Projects ')]")
