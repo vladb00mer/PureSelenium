@@ -27,6 +27,6 @@ public class ParentPage {
 
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
 
-        return element.getAttribute("value");
+        return element.getText();
     }
 }

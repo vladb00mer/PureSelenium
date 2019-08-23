@@ -1,4 +1,4 @@
-package pageobjects.user;
+package pageobjects;
 
 import common.Init;
 import common.ParentPage;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 
-public class HomePageUser extends ParentPage {
+public class HomePage extends ParentPage {
 
     @FindBy(xpath = "//a[@aria-label='Knection']")
     private WebElement knectionLink;
@@ -33,57 +33,85 @@ public class HomePageUser extends ParentPage {
     private WebElement selectDateRange;
 
 
-    HomePageUser() {
+    HomePage() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
     }
 
-    public HomePageUser(String user) {
+    public HomePage(String user) {
 
         Init.getWebDriver().navigate().to("http://ecsc00a0154c.epam.com:82/Home?ssoUserId="+user);
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));
     }
 
-    public TopMenuPageUser goToTopMenu() {
+    public TopMenuPage goToTopMenu() {
 
-        return new TopMenuPageUser();
+        return new TopMenuPage();
     }
 
-    public HomePageUser filterByName(String name) {
+    public HomePage filterByProjectName(String name) {
 
         clickOnElement(searchByName);
         setTextValue(searchByName, name);
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return this;
     }
 
-    public HomePageUser filterByProjectCode(String code) {
+    public HomePage filterByProjectCode(String code) {
 
         clickOnElement(searchByProjectCode);
         setTextValue(searchByProjectCode, code);
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return this;
     }
 
-    public HomePageUser filterByApiId(String apiId) {
+    public HomePage filterByApiId(String apiId) {
 
         clickOnElement(searchByName);
         setTextValue(searchByApiId, apiId);
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return this;
     }
 
-    public HomePageUser filterByLastUpdated(String date) {
+    public HomePage filterByLastUpdated(String date) {
 
         clickOnElement(selectDateRange);
         setTextValue(selectDateRange, date);
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return this;
     }
 
-    public ProjectPageUser openFilteredProject() {
+    public ProjectPage openFilteredProject() {
 
         List<WebElement> projectNames = Init.getWebDriver().findElements(By.xpath("//td[@data-title-text='Project Name']/div/a"));
         projectNames.get(0).click();
 
-        return new ProjectPageUser();
+        return new ProjectPage();
     }
 }

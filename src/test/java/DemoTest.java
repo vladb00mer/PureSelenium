@@ -1,31 +1,46 @@
 import common.Init;
 import org.junit.jupiter.api.*;
-import pageobjects.user.HomePageUser;
-import pageobjects.user.ProjectPageUser;
+import pageobjects.HomePage;
+import pageobjects.ProjectPage;
 
 
 class DemoTest {
 
-    private HomePageUser homePageUser;
-    private ProjectPageUser projectPageUser;
+    private HomePage homePage;
+    private ProjectPage projectPage;
+    private String projectName = "123456789";
 
     @BeforeEach
     void setUp() {
 
-        homePageUser = new HomePageUser("auto_bmsq-knct_qa1@epam.com");
+        homePage = new HomePage("nadezda_peskun@epam.com");
     }
 
     @Test
     @Tag("priority1")
-    void test() {
-        projectPageUser = homePageUser.goToTopMenu().goToHomePage().filterByName("123581321").openFilteredProject();
-        Assertions.assertTrue(projectPageUser.checkFlagPresence());
+    void testSearchByProjectNameFilter() {
+        projectPage = homePage.goToTopMenu().goToHomePage().filterByProjectName(projectName).openFilteredProject();
+        Assertions.assertEquals(projectPage.getName(), projectName);
+    }
+
+    @Test
+    @Tag("priority2")
+    void testSearchByProjectCodeFilter() {
+        projectPage = homePage.goToTopMenu().goToHomePage().filterByProjectCode(projectName).openFilteredProject();
+        Assertions.assertEquals(projectPage.getName(), projectName);
+    }
+
+    @Test
+    @Tag("priority3")
+    void testSearchByApiIdFilter() {
+        projectPage = homePage.goToTopMenu().goToHomePage().filterByApiId(projectName).openFilteredProject();
+        Assertions.assertEquals(projectPage.getName(), projectName);
     }
 
     @AfterEach
     void tearDown() {
 
         Init.closeDriver();
-        homePageUser = null;
+        homePage = null;
     }
 }
