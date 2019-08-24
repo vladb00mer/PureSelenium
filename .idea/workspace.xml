@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="view all projects tests are ready">
-      <change afterPath="$PROJECT_DIR$/src/test/java/DemoTestAllProjectsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/AllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/AllProjectsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTestAllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTestAllProjectsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTestHomePage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DemoTestAllProjectsPage">
+  <component name="RunManager" selected="JUnit.DemoTestAllProjectsPage.testSearchByProjectNameFilter">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PureSelenium" />
@@ -116,6 +115,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTestAllProjectsPage.testSearchByProjectNameFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoTestAllProjectsPage" />
+      <option name="METHOD_NAME" value="testSearchByProjectNameFilter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoTestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -130,9 +139,11 @@
       <item itemvalue="JUnit.All in PureSelenium" />
       <item itemvalue="JUnit.DemoTestHomePage" />
       <item itemvalue="JUnit.DemoTestAllProjectsPage" />
+      <item itemvalue="JUnit.DemoTestAllProjectsPage.testSearchByProjectNameFilter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTestAllProjectsPage.testSearchByProjectNameFilter" />
         <item itemvalue="JUnit.DemoTestAllProjectsPage" />
         <item itemvalue="JUnit.DemoTestHomePage" />
         <item itemvalue="Application.Main" />
@@ -297,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566571233078</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="view all projects tests are ready">
+      <created>1566633810470</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566633810470</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
