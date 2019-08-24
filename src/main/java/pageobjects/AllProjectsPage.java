@@ -2,19 +2,21 @@ package pageobjects;
 
 import common.Init;
 import common.ParentPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AllProjectsPage extends ParentPage {
 
-    @FindBy(xpath = "//div[@ng-if='userCanCreateorUpdateProject']")
-    private WebElement addNewProject;
+public class AllProjectsPage extends ParentPage {
 
     @FindBy(xpath = "//div[contains(text(), 'All Projects')]")
     private WebElement allProjectsHeader;
+
+    @FindBy(xpath = "//div[@ng-if='userCanCreateorUpdateProject']")
+    private WebElement addNewProject;
 
     @FindBy(xpath = "//input[@placeholder='Search by Name']")
     private WebElement searchByName;
@@ -38,7 +40,7 @@ public class AllProjectsPage extends ParentPage {
         setTextValue(searchByName, name);
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -50,7 +52,7 @@ public class AllProjectsPage extends ParentPage {
         setTextValue(searchByProjectCode, code);
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -62,12 +64,18 @@ public class AllProjectsPage extends ParentPage {
         setTextValue(searchByApiId, apiId);
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         return this;
     }
 
+    public ProjectPage openFilteredProject(String name) {
 
+        WebElement projectName = Init.getWebDriver().findElement(By.xpath("//a[@title='"+name+"']"));
+        projectName.click();
+
+        return new ProjectPage();
+    }
 }
