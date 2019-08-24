@@ -55,11 +55,6 @@ public class HomePage extends ParentPage {
         clickOnElement(searchByName);
         setTextValue(searchByName, name);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
 
@@ -68,11 +63,6 @@ public class HomePage extends ParentPage {
         clickOnElement(searchByProjectCode);
         setTextValue(searchByProjectCode, code);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
 
@@ -81,11 +71,6 @@ public class HomePage extends ParentPage {
         clickOnElement(searchByName);
         setTextValue(searchByApiId, apiId);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
 
@@ -94,11 +79,6 @@ public class HomePage extends ParentPage {
         clickOnElement(selectDateRange);
         setTextValue(selectDateRange, date);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
 

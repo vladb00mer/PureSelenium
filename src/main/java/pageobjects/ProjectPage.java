@@ -68,12 +68,4 @@ public class ProjectPage extends ParentPage {
         clickOnElement(knowledgeAssetsTab);
         return this;
     }
-    public void createChildWorkspace() {
-
-        clickOnElement(createChildWorkspaceButton);
-    }
-    public void openWorkspace(String name) {
-
-        List<WebElement> names = Init.getWebDriver().findElements(By.xpath(""));
-    }
 }

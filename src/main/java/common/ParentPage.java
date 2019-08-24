@@ -12,6 +12,12 @@ public class ParentPage {
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     protected void setTextValue(WebElement element, String value) {
@@ -21,6 +27,12 @@ public class ParentPage {
         element.click();
         element.clear();
         element.sendKeys(value);
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     protected String getTextValue(WebElement element) {

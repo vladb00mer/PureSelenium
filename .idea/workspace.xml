@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="view all projects tests are ready">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTestAllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTestAllProjectsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ParentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/AllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/AllProjectsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTestAllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotests/DemoTestAllProjectsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DemoTestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotests/DemoTestHomePage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DemoTestAllProjectsPage.testSearchByProjectNameFilter">
+  <component name="RunManager" selected="JUnit.All in PureSelenium">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PureSelenium" />
@@ -108,8 +112,8 @@
     </configuration>
     <configuration name="DemoTestAllProjectsPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DemoTestAllProjectsPage" />
+      <option name="PACKAGE_NAME" value="demotests" />
+      <option name="MAIN_CLASS_NAME" value="demotests.DemoTestAllProjectsPage" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,8 +121,8 @@
     </configuration>
     <configuration name="DemoTestAllProjectsPage.testSearchByProjectNameFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DemoTestAllProjectsPage" />
+      <option name="PACKAGE_NAME" value="demotests" />
+      <option name="MAIN_CLASS_NAME" value="demotests.DemoTestAllProjectsPage" />
       <option name="METHOD_NAME" value="testSearchByProjectNameFilter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -127,8 +131,8 @@
     </configuration>
     <configuration name="DemoTestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DemoTestHomePage" />
+      <option name="PACKAGE_NAME" value="demotests" />
+      <option name="MAIN_CLASS_NAME" value="demotests.DemoTestHomePage" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -315,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566633810470</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="select project by any filter tests are ready">
+      <created>1566635231147</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1566635231147</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +359,8 @@
     <MESSAGE value="additional demo tests are ready" />
     <MESSAGE value="all projects page almost ready" />
     <MESSAGE value="view all projects tests are ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="view all projects tests are ready" />
+    <MESSAGE value="select project by any filter tests are ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="select project by any filter tests are ready" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

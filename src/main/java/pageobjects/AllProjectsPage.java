@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class AllProjectsPage extends ParentPage {
@@ -39,11 +39,6 @@ public class AllProjectsPage extends ParentPage {
         clickOnElement(searchByName);
         setTextValue(searchByName, name);
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
     public AllProjectsPage filterByProjectCode(String code) {
@@ -51,11 +46,6 @@ public class AllProjectsPage extends ParentPage {
         clickOnElement(searchByProjectCode);
         setTextValue(searchByProjectCode, code);
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
     public AllProjectsPage filterByApiId(String apiId) {
@@ -63,18 +53,13 @@ public class AllProjectsPage extends ParentPage {
         clickOnElement(searchByName);
         setTextValue(searchByApiId, apiId);
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return this;
     }
 
     public ProjectPage openFilteredProject(String name) {
 
         WebElement projectName = Init.getWebDriver().findElement(By.xpath("//a[@title='"+name+"']"));
-        projectName.click();
+        clickOnElement(projectName);
 
         return new ProjectPage();
     }
