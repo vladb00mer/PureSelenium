@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-
 public class ProjectPage extends ParentPage {
 
     @FindBy(xpath = "//span[@ng-bind='::project.Name']")

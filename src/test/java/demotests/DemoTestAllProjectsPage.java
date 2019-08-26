@@ -16,6 +16,7 @@ class DemoTestAllProjectsPage {
     static void setUp() {
         homePage = new HomePage(user);
     }
+
     @Test
     @DisplayName("Search Project using Project Name filter in All Projects Page")
     void testSearchByProjectNameFilter() {
