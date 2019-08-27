@@ -1,11 +1,11 @@
-package demotests;
+package projects;
 
 import common.Init;
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
 import pageobjects.ProjectPage;
 
-class DemoTestHomePage {
+class HomePageTest {
 
     private static HomePage homePage;
     private ProjectPage projectPage;

@@ -1,11 +1,12 @@
-package demotests;
+package projects;
 
 import common.Init;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
 import pageobjects.ProjectPage;
 
-class DemoTestAllProjectsPage {
+class AllProjectsPageTest {
 
     private static HomePage homePage;
     private ProjectPage projectPage;
