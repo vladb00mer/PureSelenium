@@ -24,7 +24,7 @@ public class CreateProjectForm extends ParentPage {
     @FindBy(xpath = "//form[@name='projectCreateDialog']//input[@id='apiID']")
     private WebElement apiIdArea;
 
-    @FindBy(xpath = "//form[@name='projectCreateDialog']//input[@id='input-213']")
+    @FindBy(xpath = "//input[@aria-label='Search']")
     private WebElement therapeuticArea;
 
     @FindBy(xpath = "//ul[@id='ul-213']")
@@ -37,7 +37,7 @@ public class CreateProjectForm extends ParentPage {
     private WebElement saveProjectButton;
 
 
-    public CreateProjectForm() {
+    CreateProjectForm() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(closeButton));
@@ -51,19 +51,19 @@ public class CreateProjectForm extends ParentPage {
 
     public CreateProjectForm setProjectCode(String projectCode) {
 
-        setTextValue(projectNameArea, projectCode);
+        setTextValue(projectCodeArea, projectCode);
         return this;
     }
 
     public CreateProjectForm setApiId(String apiId) {
 
-        setTextValue(projectNameArea, apiId);
+        setTextValue(apiIdArea, apiId);
         return this;
     }
 
     public CreateProjectForm setTherapeuticArea(String projectName) {
 
-        setTextValue(projectNameArea, projectName);
+        setTextValue(therapeuticArea, projectName);
         clickOnElement(therapeuticAreaResult);
         return this;
     }

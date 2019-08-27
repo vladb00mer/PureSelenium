@@ -23,10 +23,10 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="add new Project test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="add new Project test ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest">
+  <component name="RunManager" selected="JUnit.CreateProjectTest">
     <configuration name="All in PureSelenium" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -137,6 +137,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="projects" />
       <option name="MAIN_CLASS_NAME" value="projects.AllProjectsPageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="projects" />
+      <option name="MAIN_CLASS_NAME" value="projects.CreateProjectTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,14 +221,15 @@
       <item itemvalue="JUnit.demotests in pure-selenium-junit5" />
       <item itemvalue="JUnit.AllProjectsPageTest" />
       <item itemvalue="JUnit.HomePageTest" />
+      <item itemvalue="JUnit.CreateProjectTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateProjectTest" />
         <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="JUnit.demotests in pure-selenium-junit5" />
         <item itemvalue="JUnit.AllProjectsPageTest" />
         <item itemvalue="JUnit.HomePageTest" />
-        <item itemvalue="JUnit.demotests in PureSelenium" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566910242353</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add new Project test">
+      <created>1566917536619</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1566917536619</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,7 +480,8 @@
     <MESSAGE value="create project form ready" />
     <MESSAGE value="work with checkboxes" />
     <MESSAGE value="add new Project test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new Project test" />
+    <MESSAGE value="add new Project test ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new Project test ready" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

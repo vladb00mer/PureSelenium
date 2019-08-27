@@ -10,7 +10,11 @@ class CreateProjectTest {
     private static HomePage homePage;
     private ProjectPage projectPage;
     private static String user = "nadezda_peskun@epam.com";
-    private String projectName = "123456789";
+    private String projectName = "autoTestName";
+    private String projectCode = "autoTestCode";
+    private String apiId = "autoTestApiId";
+    private String therapeuticArea = "aaaaaaaaaaaaaaa";
+
 
     @BeforeAll
     static void setUp() {
@@ -20,7 +24,14 @@ class CreateProjectTest {
     @Test
     @DisplayName("Create new Project with all Processes")
     void testSearchByProjectNameFilter() {
-        projectPage = homePage.goToTopMenu().goToHomePage().goToAllProjects().addNewProject().setProjectCode("code").setProjectName("name").setApiId("apiid").setTherapeuticArea("a").saveProject();
+        projectPage = homePage.goToTopMenu().
+                goToHomePage().goToAllProjects().
+                addNewProject().
+                setProjectCode(projectCode).
+                setProjectName(projectName).
+                setApiId(apiId).
+                setTherapeuticArea(therapeuticArea).
+                saveProject();
         Assertions.assertEquals(projectPage.getName(), projectName);
     }
 
