@@ -1,10 +1,9 @@
 package projects;
 
 import common.Init;
-import io.qameta.allure.Description;
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
-import pageobjects.ProjectPage;
+import pageobjects.project.ProjectPage;
 
 class AllProjectsPageTest {
 

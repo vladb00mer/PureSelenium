@@ -38,7 +38,22 @@ public class ParentPage {
     protected String getTextValue(WebElement element) {
 
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(element));
-
         return element.getText();
+    }
+
+    private String getCheckBox(WebElement element) {
+
+        String value = "uncheck";
+
+        if (element.getAttribute("checked").equals("checked"))
+            value = "check";
+
+        return value;
+    }
+
+    protected void setCheckBox(WebElement element, String value) {
+
+        if (!getCheckBox(element).equals(value))
+            clickOnElement(element);
     }
 }

@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.project;
 
 import common.Init;
 import common.ParentPage;
@@ -28,7 +28,7 @@ public class AllProjectsPage extends ParentPage {
     private WebElement searchByApiId;
 
 
-    AllProjectsPage() {
+    public AllProjectsPage() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(allProjectsHeader));
@@ -36,23 +36,17 @@ public class AllProjectsPage extends ParentPage {
 
     public AllProjectsPage filterByProjectName(String name) {
 
-        clickOnElement(searchByName);
         setTextValue(searchByName, name);
-
         return this;
     }
     public AllProjectsPage filterByProjectCode(String code) {
 
-        clickOnElement(searchByProjectCode);
         setTextValue(searchByProjectCode, code);
-
         return this;
     }
     public AllProjectsPage filterByApiId(String apiId) {
 
-        clickOnElement(searchByName);
         setTextValue(searchByApiId, apiId);
-
         return this;
     }
 

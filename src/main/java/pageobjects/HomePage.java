@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pageobjects.project.AllProjectsPage;
+import pageobjects.project.ProjectPage;
 
 import java.util.List;
 
@@ -52,33 +54,25 @@ public class HomePage extends ParentPage {
 
     public HomePage filterByProjectName(String name) {
 
-        clickOnElement(searchByName);
         setTextValue(searchByName, name);
-
         return this;
     }
 
     public HomePage filterByProjectCode(String code) {
 
-        clickOnElement(searchByProjectCode);
         setTextValue(searchByProjectCode, code);
-
         return this;
     }
 
     public HomePage filterByApiId(String apiId) {
 
-        clickOnElement(searchByName);
         setTextValue(searchByApiId, apiId);
-
         return this;
     }
 
     public HomePage filterByLastUpdated(String date) {
 
-        clickOnElement(selectDateRange);
         setTextValue(selectDateRange, date);
-
         return this;
     }
 

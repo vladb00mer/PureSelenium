@@ -1,15 +1,12 @@
-package pageobjects;
+package pageobjects.project;
 
 import common.Init;
 import common.ParentPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.List;
 
 public class ProjectPage extends ParentPage {
 
@@ -47,7 +44,7 @@ public class ProjectPage extends ParentPage {
     private WebElement showList;
 
 
-    ProjectPage() {
+    public ProjectPage() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(mineNoFlag));
@@ -57,11 +54,13 @@ public class ProjectPage extends ParentPage {
 
         return getTextValue(projectName);
     }
+
     public ProjectPage goToWorkspaces() {
 
         clickOnElement(workspacesTab);
         return this;
     }
+
     public ProjectPage goToKnowledgeAssets() {
 
         clickOnElement(knowledgeAssetsTab);

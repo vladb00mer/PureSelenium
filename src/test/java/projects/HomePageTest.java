@@ -3,7 +3,7 @@ package projects;
 import common.Init;
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
-import pageobjects.ProjectPage;
+import pageobjects.project.ProjectPage;
 
 class HomePageTest {
 
