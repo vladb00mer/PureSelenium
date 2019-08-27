@@ -68,7 +68,7 @@ public class CreateProjectForm extends ParentPage {
         return this;
     }
 
-    public CreateProjectForm setProcessesCheckBoxes(String... processes) {
+    public CreateProjectForm setProcessesCheckBoxes(String state, String... processes) {
 
         for (String value: processes) {
 
@@ -76,7 +76,7 @@ public class CreateProjectForm extends ParentPage {
 
                 if (element.getAttribute("title").equals(value)) {
 
-                    setCheckBox(element, "check");
+                    setCheckBox(element, state);
                 }
             }
         }

@@ -23,15 +23,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="create project form ready">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/ParentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/AllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/projects/AllProjectsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/AllProjectsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/projects/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -408,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566897264871</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="create project form ready">
+      <created>1566907973842</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1566907973842</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
