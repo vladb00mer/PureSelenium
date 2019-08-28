@@ -2,6 +2,7 @@ package pageobjects.project;
 
 import common.Init;
 import common.ParentPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,9 +27,6 @@ public class CreateProjectForm extends ParentPage {
 
     @FindBy(xpath = "//input[@aria-label='Search']")
     private WebElement therapeuticArea;
-
-    @FindBy(xpath = "//li[@md-virtual-repeat='item in $mdAutocompleteCtrl.matches']")
-    private WebElement therapeuticAreaResult;
 
     @FindBy(xpath = "//input[@type='checkbox']")
     private List<WebElement> processesCheckBoxes;
@@ -64,7 +62,7 @@ public class CreateProjectForm extends ParentPage {
     public CreateProjectForm setTherapeuticArea(String projectName) {
 
         setTextValue(therapeuticArea, projectName);
-        //clickOnElement(therapeuticAreaResult);
+        Init.getWebDriver().findElement(By.xpath("//span[contains(text(), '"+projectName+"')]")).click();
         return this;
     }
 
