@@ -23,10 +23,16 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="add new Project test ready">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="more actions for projects">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/RecentlyUpdatedKnowledgeAssetsTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projects/AllProjectsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/AllProjectsPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projects/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/HomePageTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateProjectTest">
+  <component name="RunManager" selected="JUnit.CreateProjectTest (1)">
     <configuration name="All in PureSelenium" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -127,16 +133,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllProjectsPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
+    <configuration name="CreateProjectTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PureSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="projects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="projects" />
-      <option name="MAIN_CLASS_NAME" value="projects.AllProjectsPageTest" />
+      <option name="MAIN_CLASS_NAME" value="projects.CreateProjectTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,20 +193,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demotests in PureSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PureSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demotests" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="demotests in pure-selenium-junit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -215,21 +207,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="projects in PureSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PureSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="projects" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.All in PureSelenium" />
-      <item itemvalue="JUnit.demotests in PureSelenium" />
       <item itemvalue="JUnit.demotests in pure-selenium-junit5" />
-      <item itemvalue="JUnit.AllProjectsPageTest" />
       <item itemvalue="JUnit.HomePageTest" />
       <item itemvalue="JUnit.CreateProjectTest" />
+      <item itemvalue="JUnit.projects in PureSelenium" />
+      <item itemvalue="JUnit.CreateProjectTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateProjectTest (1)" />
+        <item itemvalue="JUnit.projects in PureSelenium" />
         <item itemvalue="JUnit.CreateProjectTest" />
         <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="JUnit.demotests in pure-selenium-junit5" />
-        <item itemvalue="JUnit.AllProjectsPageTest" />
-        <item itemvalue="JUnit.HomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +487,8 @@
     <MESSAGE value="work with checkboxes" />
     <MESSAGE value="add new Project test" />
     <MESSAGE value="add new Project test ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new Project test ready" />
+    <MESSAGE value="more actions for projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="more actions for projects" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

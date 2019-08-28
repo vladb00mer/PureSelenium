@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class ProjectPage extends ParentPage {
 
     @FindBy(xpath = "//span[@ng-bind='::project.Name']")
@@ -32,13 +34,10 @@ public class ProjectPage extends ParentPage {
     private WebElement all;
 
     @FindBy(xpath = "//a[@ng-click='updateTabs(Entities.Workspaces)']")
-    private WebElement workspacesTab;
-
-    @FindBy(xpath = "//div[@ng-if='(selectedTab === Entities.KA || selectedTab === Entities.Workspaces)']")
-    private WebElement createChildWorkspaceButton;
+    private WebElement workspacesTable;
 
     @FindBy(xpath = "//td[@data-title='Name']/div/a")
-    private WebElement knowledgeAssetsTab;
+    private WebElement knowledgeAssetsTable;
 
     @FindBy(xpath = "//switch-leads/span")
     private WebElement showList;
@@ -50,20 +49,19 @@ public class ProjectPage extends ParentPage {
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(mineNoFlag));
     }
 
-    public String getName() {
-
+    public String getProjectName() {
         return getTextValue(projectName);
     }
 
-    public ProjectPage goToWorkspaces() {
+    public RecentlyUpdatedWorkspacesTable goToWorkspaces() {
 
-        clickOnElement(workspacesTab);
-        return this;
+        clickOnElement(workspacesTable);
+        return new RecentlyUpdatedWorkspacesTable();
     }
 
-    public ProjectPage goToKnowledgeAssets() {
+    public RecentlyUpdatedKnowledgeAssetsTable goToKnowledgeAssets() {
 
-        clickOnElement(knowledgeAssetsTab);
-        return this;
+        clickOnElement(knowledgeAssetsTable);
+        return new RecentlyUpdatedKnowledgeAssetsTable();
     }
 }

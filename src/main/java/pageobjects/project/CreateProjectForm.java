@@ -27,7 +27,7 @@ public class CreateProjectForm extends ParentPage {
     @FindBy(xpath = "//input[@aria-label='Search']")
     private WebElement therapeuticArea;
 
-    @FindBy(xpath = "//ul[@id='ul-213']")
+    @FindBy(xpath = "//li[@md-virtual-repeat='item in $mdAutocompleteCtrl.matches']")
     private WebElement therapeuticAreaResult;
 
     @FindBy(xpath = "//input[@type='checkbox']")
@@ -64,7 +64,7 @@ public class CreateProjectForm extends ParentPage {
     public CreateProjectForm setTherapeuticArea(String projectName) {
 
         setTextValue(therapeuticArea, projectName);
-        clickOnElement(therapeuticAreaResult);
+        //clickOnElement(therapeuticAreaResult);
         return this;
     }
 
@@ -83,9 +83,16 @@ public class CreateProjectForm extends ParentPage {
         return this;
     }
 
-    public ProjectPage saveProject() {
+    public AllProjectsPage saveProject() {
 
         clickOnElement(saveProjectButton);
-        return new ProjectPage();
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return new AllProjectsPage();
     }
 }

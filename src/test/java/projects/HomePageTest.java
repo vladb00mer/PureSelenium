@@ -21,21 +21,21 @@ class HomePageTest {
     @DisplayName("Search Project using Project Name filter in Home Page")
     void testSearchByProjectNameFilter() {
         projectPage = homePage.goToTopMenu().goToHomePage().filterByProjectName(projectName).openFilteredProject();
-        Assertions.assertEquals(projectPage.getName(), projectName);
+        Assertions.assertEquals(projectPage.getProjectName(), projectName);
     }
 
     @Test
     @DisplayName("Search Project using Project Code filter in Home Page")
     void testSearchByProjectCodeFilter() {
         projectPage = homePage.goToTopMenu().goToHomePage().filterByProjectCode(projectName).openFilteredProject();
-        Assertions.assertEquals(projectPage.getName(), projectName);
+        Assertions.assertEquals(projectPage.getProjectName(), projectName);
     }
 
     @Test
     @DisplayName("Search Project using API ID filter in Home Page")
     void testSearchByApiIdFilter() {
         projectPage = homePage.goToTopMenu().goToHomePage().filterByApiId(projectName).openFilteredProject();
-        Assertions.assertEquals(projectPage.getName(), projectName);
+        Assertions.assertEquals(projectPage.getProjectName(), projectName);
     }
 
     @AfterAll
