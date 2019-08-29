@@ -25,7 +25,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -453,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566995913060</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="create project">
+      <created>1566997347830</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1566997347830</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ready commit" />
     <MESSAGE value="ready to work under Windows" />
     <MESSAGE value="Make fillContactForm method more Generic. That means it depends on data input&#10;Develop one more test in the same test class that fills only text fields in the Contact form&#10;Move common parts of both tests like PO init and log in separately" />
     <MESSAGE value="setCheckBox() added and tested - ok" />
@@ -496,7 +502,8 @@
     <MESSAGE value="add new Project test ready" />
     <MESSAGE value="more actions for projects" />
     <MESSAGE value="knowledge assets table begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="knowledge assets table begin" />
+    <MESSAGE value="create project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
