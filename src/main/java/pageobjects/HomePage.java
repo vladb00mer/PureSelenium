@@ -89,4 +89,6 @@ public class HomePage extends ParentPage {
         clickOnElement(viewAllProjects);
         return new AllProjectsPage();
     }
+
+    
 }
