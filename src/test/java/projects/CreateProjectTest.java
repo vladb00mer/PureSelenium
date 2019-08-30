@@ -10,9 +10,9 @@ class CreateProjectTest {
     private static HomePage homePage;
     private ProjectPage projectPage;
     private static String user = "nadezda_peskun@epam.com";
-    private String projectName = "autoTestName2";
-    private String projectCode = "autoTestCode2";
-    private String apiId = "autoTestApiId2";
+    private String projectName = "autoTestName1";
+    private String projectCode = "autoTestCode1";
+    private String apiId = "autoTestApiId1";
     private String therapeuticArea = "Fibrosis";
 
 

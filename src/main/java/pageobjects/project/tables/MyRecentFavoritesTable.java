@@ -1,8 +1,14 @@
-package pageobjects.project;
+package pageobjects.project.tables;
 
+import common.Init;
 import common.ParentPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.project.ProjectPage;
 
 import java.util.List;
 
@@ -36,4 +42,41 @@ public class MyRecentFavoritesTable extends ParentPage {
     private List<WebElement> favoritesTableOptions;
 
 
+    public MyRecentFavoritesTable() {
+
+        PageFactory.initElements(Init.getWebDriver(), this);
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(searchByName));
+    }
+
+    public MyRecentFavoritesTable filterByName(String name) {
+
+        setTextValue(searchByName, name);
+        return this;
+    }
+
+    public MyRecentFavoritesTable filterByType(String type) {
+
+        setTextValue(searchByType, type);
+        return this;
+    }
+
+    public MyRecentFavoritesTable filterByProjectName(String projectName) {
+
+        setTextValue(searchByName, projectName);
+        return this;
+    }
+
+    public MyRecentFavoritesTable filterByLastAccessed(String dateRange) {
+
+        setTextValue(searchByName, dateRange);
+        return this;
+    }
+
+    public ProjectPage openFilteredFavorite() {
+
+        List<WebElement> projectNames = Init.getWebDriver().findElements(By.xpath("//table[@ng-table='favoritesTableParams']//td[@data-title-text='Name']/div/a"));
+        projectNames.get(0).click();
+
+        return new ProjectPage();
+    }
 }
