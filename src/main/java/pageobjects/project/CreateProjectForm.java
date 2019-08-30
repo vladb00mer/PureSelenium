@@ -28,7 +28,7 @@ public class CreateProjectForm extends ParentPage {
     @FindBy(xpath = "//input[@aria-label='Search']")
     private WebElement therapeuticArea;
 
-    @FindBy(xpath = "//input[@type='checkbox']")
+    @FindBy(xpath = "//label[@class='column-items-list_label']/span")
     private List<WebElement> processesCheckBoxes;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -66,18 +66,16 @@ public class CreateProjectForm extends ParentPage {
         return this;
     }
 
-    public CreateProjectForm selectProcesses(String... processes) {
+    public CreateProjectForm selectProcesses(int... rec) {
 
         for (WebElement element: processesCheckBoxes) {
 
             clickOnElement(element);
+        }
 
-            for (String str: processes) {
+        for (int i: rec) {
 
-                if (element.getAttribute("title").equals(str))
-
-                    clickOnElement(element);
-            }
+            clickOnElement(processesCheckBoxes.get(i));
         }
 
         return this;

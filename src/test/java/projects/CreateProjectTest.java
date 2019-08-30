@@ -24,7 +24,8 @@ class CreateProjectTest {
     @Test
     @DisplayName("Create new Project with all Processes")
     void testSearchByProjectNameFilter() {
-        projectPage = homePage.goToTopMenu().
+        //projectPage =
+                homePage.goToTopMenu().
                 goToHomePage().
                 goToAllProjects().
                 addNewProject().
@@ -32,10 +33,12 @@ class CreateProjectTest {
                 setTherapeuticArea(therapeuticArea).
                 setProjectName(projectName).
                 setApiId(apiId).
+                selectProcesses(1,3,5);
+                        /*.
                 saveProject().
                 filterByProjectName(projectName).
                 openFilteredProject(projectName);
-        Assertions.assertEquals(projectPage.getProjectName(), projectName);
+        Assertions.assertEquals(projectPage.getProjectName(), projectName);*/
     }
 
     @AfterAll
