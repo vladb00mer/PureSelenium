@@ -13,9 +13,12 @@ public class MyRecentKnowledgeAssets extends ParentPage {
     @FindBy(xpath = "//table[@ng-table='recentKAsTableParams']//input[@ng-model='name']")
     private WebElement searchByName;
 
+
     public MyRecentKnowledgeAssets() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(searchByName));
     }
+
+
 }

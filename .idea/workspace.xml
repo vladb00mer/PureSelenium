@@ -25,8 +25,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentKnowledgeAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentKnowledgeAssets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentWorkspaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentWorkspaces.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,6 +159,7 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in PureSelenium" />
+      <item itemvalue="JUnit.HomePageTest" />
       <item itemvalue="JUnit.CreateProjectTest" />
     </list>
     <recent_temporary>
@@ -423,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567162829321</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="processes checkboxes done">
+      <created>1567170922979</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1567170922979</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add .gitignore" />
     <MESSAGE value="add validation tests" />
     <MESSAGE value="validation done, Task128 done and tested - ok" />
     <MESSAGE value="cleaned" />
@@ -466,7 +473,8 @@
     <MESSAGE value="recently updated tables almost done" />
     <MESSAGE value="my recent" />
     <MESSAGE value="processes checkboxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="processes checkboxes" />
+    <MESSAGE value="processes checkboxes done" />
+    <option name="LAST_COMMIT_MESSAGE" value="processes checkboxes done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
