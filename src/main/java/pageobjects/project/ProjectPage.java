@@ -12,10 +12,10 @@ import pageobjects.project.tables.RecentlyUpdatedWorkspacesTable;
 
 public class ProjectPage extends ParentPage {
 
-    @FindBy(xpath = "//span[@ng-bind='::project.Name']")
+    @FindBy(xpath = "//span[@ui-id='projectTitle']")
     private WebElement projectName;
 
-    @FindBy(xpath = "//label[@for='mine-no']")
+    @FindBy(xpath = "//input[@ui-id='toggleMineAll']")
     private WebElement mineNoFlag;
 
     @FindBy(xpath = "//input[@id='chemistry_btn']/..")
@@ -33,10 +33,10 @@ public class ProjectPage extends ParentPage {
     @FindBy(xpath = "//input[@id='all_btn']/..")
     private WebElement all;
 
-    @FindBy(xpath = "//a[@ng-click='updateTabs(Entities.Workspaces)']")
+    @FindBy(xpath = "//a[@ui-id='WSTab']")
     private WebElement workspacesTable;
 
-    @FindBy(xpath = "//td[@data-title='Name']/div/a")
+    @FindBy(xpath = "//a[@ui-id='KATab']")
     private WebElement knowledgeAssetsTable;
 
     @FindBy(xpath = "//switch-leads/span")

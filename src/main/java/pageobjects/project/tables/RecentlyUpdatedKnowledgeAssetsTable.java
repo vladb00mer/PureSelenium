@@ -12,7 +12,7 @@ import java.util.List;
 
 public class RecentlyUpdatedKnowledgeAssetsTable extends ParentPage {
 
-    @FindBy(xpath = "//div[@ng-if='(selectedTab === Entities.KA || selectedTab === Entities.Workspaces)']")
+    @FindBy(xpath = "//div[@ui-id='addNewEntity']")
     private WebElement addFileOrLinkButton;
 
     @FindBy(xpath = "//td[@data-title-text='Name']/div/a")
@@ -27,7 +27,7 @@ public class RecentlyUpdatedKnowledgeAssetsTable extends ParentPage {
     @FindBy(xpath = "//table[@ng-table='kaTableParams']//td[@data-title-text='Updated By']/div/span")
     private List<WebElement> workspacesTableUpdatedBy;
 
-    @FindBy(xpath = "//table[@ng-table='kaTableParams']//td[@data-title-text='Metrics']/div/div/div")
+    @FindBy(xpath = "//table[@ui-id='ellipsisMenuKAgrid']")
     private List<WebElement> workspacesTableOptions;
 
     @FindBy(xpath = "//a[@title='View All Knowledge Assets']")

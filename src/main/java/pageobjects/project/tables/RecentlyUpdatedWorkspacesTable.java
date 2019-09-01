@@ -12,7 +12,7 @@ import java.util.List;
 
 public class RecentlyUpdatedWorkspacesTable extends ParentPage {
 
-    @FindBy(xpath = "//div[@ng-if='(selectedTab === Entities.KA || selectedTab === Entities.Workspaces)']")
+    @FindBy(xpath = "//div[@ui-id='addNewEntity']")
     private WebElement createChildWorkspaceButton;
 
     @FindBy(xpath = "//td[@data-title-text='Name']/div/a")
@@ -30,7 +30,7 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
     @FindBy(xpath = "//td[@data-title-text='Status']//img")
     private List<WebElement> workspacesTableStatus;
 
-    @FindBy(xpath = "//div[@class='dropdown-actionBox']/div")
+    @FindBy(xpath = "//div[@ui-id='ellipsisMenuWSgrid']")
     private List<WebElement> workspacesTableOptions;
 
     @FindBy(xpath = "//a[@title='View All Workspaces']")
