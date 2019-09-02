@@ -24,19 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentFavoritesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentFavoritesTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentKnowledgeAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentKnowledgeAssets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentWorkspaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentWorkspaces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedKnowledgeAssetsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedKnowledgeAssetsTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/projects/AllProjectsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AllProjectsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CreateProjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/projects/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -398,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567239044052</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="create workspace begin">
+      <created>1567426966373</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1567426966373</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +412,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="validation done, Task128 done and tested - ok" />
     <MESSAGE value="cleaned" />
     <MESSAGE value="up and left menu almost done" />
     <MESSAGE value="up and left menu done" />
@@ -441,7 +436,8 @@
     <MESSAGE value="processes checkboxes" />
     <MESSAGE value="processes checkboxes done" />
     <MESSAGE value="MyRecentWorkspaces selectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyRecentWorkspaces selectors" />
+    <MESSAGE value="create workspace begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="create workspace begin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

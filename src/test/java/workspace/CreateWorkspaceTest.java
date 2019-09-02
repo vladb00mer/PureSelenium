@@ -35,10 +35,10 @@ class CreateWorkspaceTest {
                 goToCreateChildWorkspace().
                 selectWorkspace(workspace1).
                 selectWorkspace(workspace2).
-                setWorkspaceNameFromTemplate(workspaceName).
-                createWorkspace();
+                setWorkspaceNameFromTemplate(workspaceName);
+
                 /*.
-                saveProject().
+                createWorkspace();
                 filterByProjectName(projectName).
                 openFilteredProject(projectName);
         Assertions.assertEquals(projectPage.getProjectName(), projectName);*/
