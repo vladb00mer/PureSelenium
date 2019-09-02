@@ -1,19 +1,21 @@
-package projects;
+package workspace;
 
 import common.Init;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import pageobjects.HomePage;
 import pageobjects.project.ProjectPage;
 
-class CreateProjectTest {
+class CreateWorkspaceTest {
 
     private static HomePage homePage;
-    private ProjectPage projectPage;
     private static String user = "nadezda_peskun@epam.com";
-    private String projectName = "autoTestName1";
-    private String projectCode = "autoTestCode1";
-    private String apiId = "autoTestApiId1";
-    private String therapeuticArea = "Fibrosis";
+    private String projectName = "autoTestName2";
+    private String workspace1 = "Chemistry";
+    private String workspace2 = "Route";
+    private String workspaceName = "autoTestWS1";
 
 
     @BeforeAll
@@ -28,13 +30,14 @@ class CreateProjectTest {
                 homePage.goToTopMenu().
                 goToHomePage().
                 goToAllProjects().
-                addNewProject().
-                setProjectCode(projectCode).
-                setTherapeuticArea(therapeuticArea).
-                setProjectName(projectName).
-                setApiId(apiId).
-                selectProcesses(1,3,5);
-                        /*.
+                openFilteredProject(projectName).
+                goToWorkspaces().
+                goToCreateChildWorkspace().
+                selectWorkspace(workspace1).
+                selectWorkspace(workspace2).
+                setWorkspaceNameFromTemplate(workspaceName).
+                createWorkspace();
+                /*.
                 saveProject().
                 filterByProjectName(projectName).
                 openFilteredProject(projectName);

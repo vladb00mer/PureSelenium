@@ -1,4 +1,4 @@
-package pageobjects.project.tables;
+package pageobjects.tables;
 
 import common.Init;
 import common.ParentPage;
@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.workspace.CreateWorkspaceForm;
 
 import java.util.List;
 
@@ -46,9 +47,10 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(createChildWorkspaceButton));
     }
 
-    public void goToCreateChildWorkspace() {
+    public CreateWorkspaceForm goToCreateChildWorkspace() {
 
         clickOnElement(createChildWorkspaceButton);
+        return new CreateWorkspaceForm();
     }
 
     public void openWorkSpaceByName(int i) {

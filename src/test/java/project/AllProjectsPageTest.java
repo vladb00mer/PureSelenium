@@ -1,4 +1,4 @@
-package projects;
+package project;
 
 import common.Init;
 import org.junit.jupiter.api.*;

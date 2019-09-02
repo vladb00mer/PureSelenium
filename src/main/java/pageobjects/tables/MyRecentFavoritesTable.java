@@ -1,4 +1,4 @@
-package pageobjects.project.tables;
+package pageobjects.tables;
 
 import common.Init;
 import common.ParentPage;

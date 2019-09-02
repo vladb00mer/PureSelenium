@@ -12,10 +12,10 @@ public class Init {
 
 
         //MacOS driver
-        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
 
         //Windows driver
-        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
 
 
         if(driver == null) {

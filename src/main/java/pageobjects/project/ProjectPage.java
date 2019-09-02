@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageobjects.project.tables.RecentlyUpdatedKnowledgeAssetsTable;
-import pageobjects.project.tables.RecentlyUpdatedWorkspacesTable;
+import pageobjects.tables.RecentlyUpdatedKnowledgeAssetsTable;
+import pageobjects.tables.RecentlyUpdatedWorkspacesTable;
 
 public class ProjectPage extends ParentPage {
 

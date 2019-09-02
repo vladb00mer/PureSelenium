@@ -24,11 +24,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentKnowledgeAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentKnowledgeAssets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedKnowledgeAssetsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedKnowledgeAssetsTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentFavoritesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentFavoritesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentKnowledgeAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentKnowledgeAssets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/MyRecentWorkspaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentWorkspaces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedKnowledgeAssetsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedKnowledgeAssetsTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projects/AllProjectsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AllProjectsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projects/CreateProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CreateProjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projects/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/HomePageTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +105,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="workspace" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -116,59 +127,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager" selected="JUnit.CreateProjectTest">
-    <configuration name="All in PureSelenium" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="projects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="projects" />
-      <option name="MAIN_CLASS_NAME" value="projects.CreateProjectTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="projects" />
-      <option name="MAIN_CLASS_NAME" value="projects.HomePageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.All in PureSelenium" />
-      <item itemvalue="JUnit.HomePageTest" />
-      <item itemvalue="JUnit.CreateProjectTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CreateProjectTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
