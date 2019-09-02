@@ -27,16 +27,15 @@ class CreateWorkspaceTest {
     @DisplayName("Create new Project with all Processes")
     void testSearchByProjectNameFilter() {
         //projectPage =
-                homePage.goToTopMenu().
-                goToHomePage().
-                goToAllProjects().
-                openFilteredProject(projectName).
-                goToWorkspaces().
-                goToCreateChildWorkspace().
-                selectWorkspace(workspace1).
-                selectWorkspace(workspace2).
-                setWorkspaceNameFromTemplate(workspaceName);
-
+                homePage.goToTopMenu()
+                        .goToHomePage()
+                        .goToAllProjects()
+                        .filterByProjectName(projectName)
+                        .openFilteredProject(projectName)
+                        .goToWorkspaces()
+                        .goToCreateChildWorkspace()
+                        .selectWorkspace(workspace1)
+                        .selectWorkspace(workspace2);
                 /*.
                 createWorkspace();
                 filterByProjectName(projectName).

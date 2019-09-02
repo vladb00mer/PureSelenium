@@ -56,7 +56,13 @@ public class CreateWorkspaceForm extends ParentPage {
 
     public CreateWorkspaceForm selectWorkspace(String ws) {
 
-        clickOnElement(Init.getWebDriver().findElement(By.xpath("//span[contains(text(), '"+ws+"')]")));
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Init.getWebDriver().findElement(By.xpath("//span[contains(text(), '"+ws+"')]/..")).click();
         return this;
     }
 

@@ -46,7 +46,7 @@ public class ProjectPage extends ParentPage {
     public ProjectPage() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
-        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(mineNoFlag));
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(projectName));
     }
 
     public String getProjectName() {
