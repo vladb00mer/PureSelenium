@@ -6,7 +6,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pageobjects.HomePage;
-import pageobjects.project.ProjectPage;
 
 class CreateWorkspaceTest {
 
@@ -15,6 +14,7 @@ class CreateWorkspaceTest {
     private String projectName = "autoTestName2";
     private String workspace1 = "Chemistry";
     private String workspace2 = "Route";
+    private String workspace3 = "Step";
     private String workspaceName = "autoTestWS1";
 
 
@@ -34,8 +34,12 @@ class CreateWorkspaceTest {
                         .openFilteredProject(projectName)
                         .goToWorkspaces()
                         .goToCreateChildWorkspace()
-                        .selectWorkspace(workspace1)
-                        .selectWorkspace(workspace2);
+                        .simpleSelectWorkspaceFromDropDown(workspace1)
+                        .selectWorkspaceFromDropDown(workspace2)
+                        .simpleSelectWorkspaceFromDropDown(workspace3)
+                        .setWorkspaceNameFromTemplate(workspaceName)
+                        .goToCustomWorkspace()
+                        .setCustomWorkspaceName(workspaceName);
                 /*.
                 createWorkspace();
                 filterByProjectName(projectName).

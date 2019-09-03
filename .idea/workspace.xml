@@ -25,7 +25,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" afterDir="false" />
     </list>
@@ -119,9 +119,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in pure-selenium-junit5">
+    <configuration name="All in pure-selenium-junit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateWorkspaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PureSelenium" />
+      <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="workspace.*" />
@@ -137,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in pure-selenium-junit5" />
         <item itemvalue="JUnit.CreateWorkspaceTest" />
       </list>
     </recent_temporary>

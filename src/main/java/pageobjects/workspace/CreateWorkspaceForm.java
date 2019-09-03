@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class CreateWorkspaceForm extends ParentPage {
 
     @FindBy(xpath = "//span[contains(text(), 'From template')]")
@@ -17,8 +19,11 @@ public class CreateWorkspaceForm extends ParentPage {
     @FindBy(xpath = "//input[@name='autoCompleteWorkspace']")
     private WebElement selectWorkspace;
 
-    @FindBy(xpath = "//input[@name='workspaceName']")
+    @FindBy(xpath = "//input[@id='Name']")
     private WebElement workspaceName;
+
+    @FindBy(xpath = "//ul/li/button[@ng-click='onSelectNextItem(node)']/span[@class='chip-name ng-binding']")
+    private List<WebElement> workspaces;
 
     @FindBy(xpath = "//button[@aria-label='Remove']")
     private WebElement removeWorkspaceButton;
@@ -28,6 +33,9 @@ public class CreateWorkspaceForm extends ParentPage {
 
     @FindBy(xpath = "//input[@id='Name']")
     private WebElement fromTemplateWorkspaceName;
+
+    @FindBy(xpath = "//input[@id='workspaceName']")
+    private WebElement customWorkspaceName;
 
     @FindBy(xpath = "//button[contains(text(), 'Create Workspace')]")
     private WebElement createWorkspaceButton;
@@ -54,21 +62,43 @@ public class CreateWorkspaceForm extends ParentPage {
         return this;
     }
 
-    public CreateWorkspaceForm selectWorkspace(String ws) {
+    public CreateWorkspaceForm simpleSelectWorkspaceFromDropDown(String ws) {
+
+        setTextValue(selectWorkspace, ws);
+        return this;
+    }
+
+    public CreateWorkspaceForm selectWorkspaceFromDropDown(String ws) {
+
+        setTextValue(selectWorkspace, ws);
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        Init.getWebDriver().findElement(By.xpath("//span[contains(text(), '"+ws+"')]/..")).click();
+        WebElement element = Init.getWebDriver().findElement(By.xpath("//span[@title='"+ws+"']"));
+        clickOnElement(element);
+
+        return this;
+    }
+
+    public CreateWorkspaceForm selectWorkspaceFromTags(String tag) {
+
+        Init.getWebDriver().findElement(By.xpath("//span[contains(text(), '"+tag+"')]/..")).click();
         return this;
     }
 
     public CreateWorkspaceForm setWorkspaceNameFromTemplate(String name) {
 
         setTextValue(fromTemplateWorkspaceName, name);
+        return this;
+    }
+
+    public CreateWorkspaceForm setCustomWorkspaceName(String name) {
+
+        setTextValue(customWorkspaceName, name);
         return this;
     }
 
