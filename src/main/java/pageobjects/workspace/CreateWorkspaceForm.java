@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.project.ProjectPage;
 
 import java.util.List;
 
@@ -102,8 +103,9 @@ public class CreateWorkspaceForm extends ParentPage {
         return this;
     }
 
-    public void createWorkspace() {
+    public ProjectPage createWorkspace() {
 
         clickOnElement(createWorkspaceButton);
+        return new ProjectPage();
     }
 }

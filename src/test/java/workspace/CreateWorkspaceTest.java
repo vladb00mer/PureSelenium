@@ -26,7 +26,7 @@ class CreateWorkspaceTest {
     @Test
     @DisplayName("Create new Project with all Processes")
     void testSearchByProjectNameFilter() {
-        //projectPage =
+        //workspacePage =
                 homePage.goToTopMenu()
                         .goToHomePage()
                         .goToAllProjects()
@@ -39,12 +39,12 @@ class CreateWorkspaceTest {
                         .simpleSelectWorkspaceFromDropDown(workspace3)
                         .setWorkspaceNameFromTemplate(workspaceName)
                         .goToCustomWorkspace()
-                        .setCustomWorkspaceName(workspaceName);
-                /*.
-                createWorkspace();
-                filterByProjectName(projectName).
-                openFilteredProject(projectName);
-        Assertions.assertEquals(projectPage.getProjectName(), projectName);*/
+                        .setCustomWorkspaceName(workspaceName)
+                        .createWorkspace();
+                /*
+                Assertions.assertEquals(projectPage.getProjectName(), projectName);
+                */
+
     }
 
     @AfterAll

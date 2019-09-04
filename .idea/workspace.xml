@@ -23,9 +23,10 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/WorkspacePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workspace/creationbytemplate/Task11359Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" afterDir="false" />
     </list>
@@ -119,11 +120,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in pure-selenium-junit5">
+  <component name="RunManager" selected="JUnit.Task11359Test">
     <configuration name="All in pure-selenium-junit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project" />
+      <option name="MAIN_CLASS_NAME" value="project.CreateProjectTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,10 +159,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task11359Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="workspace.creationbytemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="workspace.creationbytemplate" />
+      <option name="MAIN_CLASS_NAME" value="workspace.creationbytemplate.Task11359Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in pure-selenium-junit5" />
+        <item itemvalue="JUnit.Task11359Test" />
+        <item itemvalue="JUnit.CreateProjectTest" />
         <item itemvalue="JUnit.CreateWorkspaceTest" />
+        <item itemvalue="JUnit.All in pure-selenium-junit5" />
       </list>
     </recent_temporary>
   </component>
@@ -434,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567427047080</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="create workspace done">
+      <created>1567510263727</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1567510263727</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,8 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="cleaned" />
-    <MESSAGE value="up and left menu almost done" />
     <MESSAGE value="up and left menu done" />
     <MESSAGE value="working with controls" />
     <MESSAGE value="demo test ready" />
@@ -477,7 +515,9 @@
     <MESSAGE value="processes checkboxes done" />
     <MESSAGE value="MyRecentWorkspaces selectors" />
     <MESSAGE value="create workspace begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="create workspace begin" />
+    <MESSAGE value="create workspace done" />
+    <MESSAGE value="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done" />
+    <option name="LAST_COMMIT_MESSAGE" value="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
