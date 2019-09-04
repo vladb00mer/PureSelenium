@@ -16,12 +16,13 @@ class Task11359Test {
 
     @BeforeAll
     static void setUp() {
+
         homePage = new HomePage(user);
     }
 
     @Test
     @DisplayName("11836: Create Child Workspace from Custom WS")
-    void testSearchByProjectNameFilter() {
+    void createChildWorkspaceFromCustomWorkspaceTest() {
 
         projectPage = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace()
                 .goToFromTemplate().goToCustomWorkspace().setCustomWorkspaceName(workspaceName).createWorkspace();
@@ -31,6 +32,7 @@ class Task11359Test {
 
     @AfterAll
     static void tearDown() {
+
         Init.closeDriver();
         homePage = null;
     }
