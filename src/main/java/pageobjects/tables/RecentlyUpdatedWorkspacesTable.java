@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.workspace.AllWorkspacesPage;
 import pageobjects.workspace.CreateWorkspaceForm;
 import pageobjects.workspace.WorkspacePage;
 
@@ -92,9 +93,10 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
         clickOnElement(workspacesTableOptions.get(i));
     }
 
-    public void viewAllWorkspaces() {
+    public AllWorkspacesPage viewAllWorkspaces() {
 
         clickOnElement(viewAllWorkspacesButton);
+        return new AllWorkspacesPage();
     }
 
     public RecentlyUpdatedWorkspacesTable showMore() {

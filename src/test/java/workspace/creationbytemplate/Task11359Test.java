@@ -37,7 +37,7 @@ class Task11359Test {
                 .goToCreateChildWorkspace()
                 .goToFromTemplate()
                 .setCustomWorkspaceName(customWorkspaceName)
-                .createWorkspace()
+                .createChildWorkspace()
                 .goToWorkspaces()
                 .openWorkSpaceByName(customWorkspaceName)
                 .getWorkspaceName();
@@ -61,10 +61,34 @@ class Task11359Test {
                 .simpleSelectWorkspaceFromDropDown(fromTemplateWSLevel1)
                 .simpleSelectWorkspaceFromDropDown(fromTemplateWSLevel2)
                 .setWorkspaceNameFromTemplate(fromTemplateWorkspaceName)
-                .createWorkspace()
+                .createChildWorkspace()
                 .goToWorkspaces()
                 .openWorkSpaceByName(customWorkspaceName)
                 .getWorkspaceName();
+
+        Assertions.assertEquals(fromTemplateWorkspaceName, wsName);
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11845 View of 'Create Workspace' modal opened from PD/View all WSs for Project that doesn't have any Process selected")
+    void defaultTabWithoutAnyProcessSelected() {
+
+        String wsName = homePage
+                .goToTopMenu()
+                .goToHomePage()
+                .goToAllProjects()
+                .filterByProjectName(projectName)
+                .openFilteredProject(projectName)
+                .goToWorkspaces()
+                .goToCreateChildWorkspace()
+                .goToCustomWorkspace()
+                .goToFromTemplate()
+                .cancel()
+                .goToWorkspaces()
+                .viewAllWorkspaces()
+                .createChildWorkspace()
+                .cancel()
+                .getProjectName();
 
         Assertions.assertEquals(fromTemplateWorkspaceName, wsName);
     }

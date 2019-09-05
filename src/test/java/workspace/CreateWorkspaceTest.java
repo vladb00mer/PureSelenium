@@ -40,7 +40,7 @@ class CreateWorkspaceTest {
                         .setWorkspaceNameFromTemplate(workspaceName)
                         .goToCustomWorkspace()
                         .setCustomWorkspaceName(workspaceName)
-                        .createWorkspace();
+                        .createChildWorkspace();
                 /*
                 Assertions.assertEquals(projectPage.getProjectName(), projectName);
                 */
