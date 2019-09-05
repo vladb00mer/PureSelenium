@@ -2,12 +2,14 @@ package pageobjects.tables;
 
 import common.Init;
 import common.ParentPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.workspace.CreateWorkspaceForm;
+import pageobjects.workspace.WorkspacePage;
 
 import java.util.List;
 
@@ -53,9 +55,16 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
         return new CreateWorkspaceForm();
     }
 
-    public void openWorkSpaceByName(int i) {
+    public WorkspacePage openWorkSpaceByName(String name) {
 
-        clickOnElement(workspacesTableNames.get(i));
+        for (WebElement element: workspacesTableNames) {
+
+            if (element.getAttribute("title").equals(name))
+
+                clickOnElement(element);
+        }
+
+        return new WorkspacePage();
     }
 
     public void openParentWorkSpace(int i) {

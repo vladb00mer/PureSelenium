@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.tables.RecentlyUpdatedKnowledgeAssetsTable;
 import pageobjects.tables.RecentlyUpdatedWorkspacesTable;
 
+import java.util.List;
+
 public class ProjectPage extends ParentPage {
 
     @FindBy(xpath = "//span[@ui-id='projectTitle']")
@@ -36,6 +38,9 @@ public class ProjectPage extends ParentPage {
     @FindBy(xpath = "//a[@ui-id='WSTab']")
     private WebElement workspacesTable;
 
+    @FindBy(xpath = "//td[@data-title-text='Name']/div/a")
+    private List<WebElement> workspacesTableNames;
+
     @FindBy(xpath = "//a[@ui-id='KATab']")
     private WebElement knowledgeAssetsTable;
 
@@ -51,6 +56,11 @@ public class ProjectPage extends ParentPage {
 
     public String getProjectName() {
         return getTextValue(projectName);
+    }
+
+    public String getFirstWorkspaceNameFromTable() {
+
+        return getTextValue(workspacesTableNames.get(0));
     }
 
     public RecentlyUpdatedWorkspacesTable goToWorkspaces() {

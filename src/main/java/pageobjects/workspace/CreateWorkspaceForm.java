@@ -14,11 +14,11 @@ import java.util.List;
 
 public class CreateWorkspaceForm extends ParentPage {
 
-    @FindBy(xpath = "//span[contains(text(), 'From template')]")
+    @FindBy(xpath = "//a[@ui-id='createNewWSAsKrmTemplate']")
     private WebElement fromTemplateTab;
 
-    @FindBy(xpath = "//input[@name='autoCompleteWorkspace']")
-    private WebElement selectWorkspace;
+    @FindBy(xpath = "//md-autocomplete[@ui-id='SelectNodesForCreateNewWS']//input")
+    private WebElement fromTemplateSelectWorkspace;
 
     @FindBy(xpath = "//input[@id='Name']")
     private WebElement workspaceName;
@@ -29,7 +29,7 @@ public class CreateWorkspaceForm extends ParentPage {
     @FindBy(xpath = "//button[@aria-label='Remove']")
     private WebElement removeWorkspaceButton;
 
-    @FindBy(xpath = "//span[contains(text(), 'Custom workspace')]")
+    @FindBy(xpath = "//a[@ui-id='createNewWSAsCustom']")
     private WebElement customWorkspaceTab;
 
     @FindBy(xpath = "//input[@id='Name']")
@@ -65,13 +65,13 @@ public class CreateWorkspaceForm extends ParentPage {
 
     public CreateWorkspaceForm simpleSelectWorkspaceFromDropDown(String ws) {
 
-        setTextValue(selectWorkspace, ws);
+        setTextValue(fromTemplateSelectWorkspace, ws);
         return this;
     }
 
     public CreateWorkspaceForm selectWorkspaceFromDropDown(String ws) {
 
-        setTextValue(selectWorkspace, ws);
+        setTextValue(fromTemplateSelectWorkspace, ws);
 
         try {
             Thread.sleep(1000);

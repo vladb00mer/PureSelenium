@@ -25,6 +25,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/creationbytemplate/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/creationbytemplate/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Task11359Test">
+  <component name="RunManager" selected="JUnit.Task11359Test.createWorkspacefromTemplateFromProjectDashboardTest">
     <configuration name="All in pure-selenium-junit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -171,8 +174,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task11359Test.createWorkspacefromTemplateFromProjectDashboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="workspace.creationbytemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="workspace.creationbytemplate" />
+      <option name="MAIN_CLASS_NAME" value="workspace.creationbytemplate.Task11359Test" />
+      <option name="METHOD_NAME" value="createWorkspacefromTemplateFromProjectDashboardTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task11359Test.createWorkspacefromTemplateFromProjectDashboardTest" />
         <item itemvalue="JUnit.Task11359Test" />
         <item itemvalue="JUnit.CreateProjectTest" />
         <item itemvalue="JUnit.CreateWorkspaceTest" />
@@ -478,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567601967043</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done">
+      <created>1567608667635</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1567608667635</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
