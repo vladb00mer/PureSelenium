@@ -23,14 +23,14 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/AllWorkspacesPage.java" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="tests begin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/EllipsisMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ModifyProjectForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/creationbytemplate/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/creationbytemplate/Task11359Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/CreateWorkspaceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/creationbytemplate/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,23 +122,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Task11359Test.defaultTabWithoutAnyProcessSelected">
-    <configuration name="CreateProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="project" />
-      <option name="MAIN_CLASS_NAME" value="project.CreateProjectTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateWorkspaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Task11359Test.automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
@@ -147,54 +132,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="workspace" />
-      <option name="MAIN_CLASS_NAME" value="workspace.CreateWorkspaceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task11359Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="workspace.creationbytemplate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="workspace.creationbytemplate" />
-      <option name="MAIN_CLASS_NAME" value="workspace.creationbytemplate.Task11359Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task11359Test.createWorkspacefromTemplateFromProjectDashboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="workspace.creationbytemplate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="workspace.creationbytemplate" />
-      <option name="MAIN_CLASS_NAME" value="workspace.creationbytemplate.Task11359Test" />
-      <option name="METHOD_NAME" value="createWorkspacefromTemplateFromProjectDashboardTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task11359Test.defaultTabWithoutAnyProcessSelected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="workspace.creationbytemplate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="workspace.creationbytemplate" />
-      <option name="MAIN_CLASS_NAME" value="workspace.creationbytemplate.Task11359Test" />
-      <option name="METHOD_NAME" value="defaultTabWithoutAnyProcessSelected" />
+      <option name="MAIN_CLASS_NAME" value="workspace.Task11359Test" />
+      <option name="METHOD_NAME" value="automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,11 +141,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task11359Test.defaultTabWithoutAnyProcessSelected" />
-        <item itemvalue="JUnit.Task11359Test.createWorkspacefromTemplateFromProjectDashboardTest" />
-        <item itemvalue="JUnit.Task11359Test" />
-        <item itemvalue="JUnit.CreateProjectTest" />
-        <item itemvalue="JUnit.CreateWorkspaceTest" />
+        <item itemvalue="JUnit.Task11359Test.automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal" />
       </list>
     </recent_temporary>
   </component>
@@ -522,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567683820915</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="BMSQKNCT-11845 View of 'Create Workspace' modal opened from PD/View all WSs for Project that doesn't have any Process selected">
+      <created>1567695773862</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1567695773862</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,8 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working with controls" />
-    <MESSAGE value="demo test ready" />
     <MESSAGE value="additional demo tests are ready" />
     <MESSAGE value="all projects page almost ready" />
     <MESSAGE value="view all projects tests are ready" />
@@ -565,7 +505,9 @@
     <MESSAGE value="create workspace done" />
     <MESSAGE value="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard" />
+    <MESSAGE value="BMSQKNCT-11845 View of 'Create Workspace' modal opened from PD/View all WSs for Project that doesn't have any Process selected" />
+    <MESSAGE value="tests begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests begin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

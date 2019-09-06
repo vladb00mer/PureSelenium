@@ -19,15 +19,6 @@ public class CreateWorkspaceForm extends ParentPage {
     @FindBy(xpath = "//a[@ui-id='createNewWSAsKrmTemplate']")
     private WebElement fromTemplateTab;
 
-    @FindBy(xpath = "//md-autocomplete[@ui-id='SelectNodesForCreateNewWS']//input")
-    private WebElement fromTemplateSelectWorkspace;
-
-    @FindBy(xpath = "//input[@id='Name']")
-    private WebElement workspaceName;
-
-    @FindBy(xpath = "//ul/li/button[@ng-click='onSelectNextItem(node)']/span[@class='chip-name ng-binding']")
-    private List<WebElement> workspaces;
-
     @FindBy(xpath = "//button[@aria-label='Remove']")
     private WebElement removeWorkspaceButton;
 
@@ -43,7 +34,7 @@ public class CreateWorkspaceForm extends ParentPage {
     @FindBy(xpath = "//button[contains(text(), 'Create Workspace')]")
     private WebElement createWorkspaceButton;
 
-    @FindBy(xpath = "//button[contains(text(), 'Cancel')]")
+    @FindBy(xpath = "//button[@aria-label='Cancel action if form valid']")
     private WebElement cancelButton;
 
 
@@ -65,31 +56,9 @@ public class CreateWorkspaceForm extends ParentPage {
         return this;
     }
 
-    public CreateWorkspaceForm simpleSelectWorkspaceFromDropDown(String ws) {
-
-        setTextValue(fromTemplateSelectWorkspace, ws);
-        return this;
-    }
-
-    public CreateWorkspaceForm selectWorkspaceFromDropDown(String ws) {
-
-        setTextValue(fromTemplateSelectWorkspace, ws);
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        WebElement element = Init.getWebDriver().findElement(By.xpath("//span[@title='"+ws+"']"));
-        clickOnElement(element);
-
-        return this;
-    }
-
     public CreateWorkspaceForm selectWorkspaceFromTags(String tag) {
 
-        Init.getWebDriver().findElement(By.xpath("//span[contains(text(), '"+tag+"')]/..")).click();
+        clickOnElement(Init.getWebDriver().findElement(By.xpath("//button[ui-id='"+tag+"')]")));
         return this;
     }
 

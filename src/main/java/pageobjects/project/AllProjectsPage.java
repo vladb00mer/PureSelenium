@@ -39,6 +39,13 @@ public class AllProjectsPage extends ParentPage {
         setTextValue(searchByName, name);
         return this;
     }
+
+    public EllipsisMenu useEllipsisMenu(String project) {
+
+        Init.getWebDriver().findElement(By.xpath("//div[@project-name='"+project+"']")).click();
+        return new EllipsisMenu();
+    }
+
     public AllProjectsPage filterByProjectCode(String code) {
 
         setTextValue(searchByProjectCode, code);
