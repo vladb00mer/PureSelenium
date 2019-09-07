@@ -114,4 +114,16 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
         clickOnElement(ellipsisMenu);
         return new EllipsisMenu();
     }
+
+    public boolean tableContainsName(String name) {
+
+        boolean val = false;
+
+        for (WebElement element: workspacesTableNames) {
+
+            if (getTextValue(element).equals(name))
+                val = true;
+        }
+        return val;
+    }
 }

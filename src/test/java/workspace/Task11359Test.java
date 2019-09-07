@@ -2,9 +2,8 @@ package workspace;
 
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
-import pageobjects.project.ProjectPage;
+import pageobjects.tables.RecentlyUpdatedWorkspacesTable;
 import pageobjects.workspace.CreateWorkspaceForm;
-import pageobjects.workspace.WorkspacePage;
 
 class Task11359Test {
 
@@ -86,8 +85,19 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11861 Create Workspace from Template from View All Workspaces page")
     void createWorkspaceFromTemplateFromViewAllWorkspacesPage() {
 
-        ProjectPage projectPage = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+        RecentlyUpdatedWorkspacesTable recentlyUpdatedWorkspacesTable = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
                 .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").removeChips("Chemistry").selectWorkspaceFromTags("Chemistry")
-                .selectWorkspaceFromTags("Route Scouting").createChildWorkspace();
+                .selectWorkspaceFromTags("Route Scouting").createChildWorkspace().goToWorkspaces();
+
+        Assertions.assertTrue(recentlyUpdatedWorkspacesTable.tableContainsName("Chemistry"));
+        Assertions.assertTrue(recentlyUpdatedWorkspacesTable.tableContainsName("Route Scouting"));
     }
+
+
+
+
+
+
+
+
 }
