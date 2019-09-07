@@ -2,7 +2,9 @@ package workspace;
 
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
+import pageobjects.project.ProjectPage;
 import pageobjects.workspace.CreateWorkspaceForm;
+import pageobjects.workspace.WorkspacePage;
 
 class Task11359Test {
 
@@ -71,14 +73,21 @@ class Task11359Test {
 
     @Test
     @DisplayName("BMSQKNCT-11859 Keep automatic creation of the first nodes based on Process selection in Modify Project modal")
-    void automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal() {
+    void automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModalTest() {
 
-        CreateWorkspaceForm createWorkspaceForm = homePage.goToTopMenu().goToHomePage().goToAllProjects().useEllipsisMenu("123456789").edit().selectProcesses(3)
-                .saveProject().filterByProjectName("123456789").openFilteredProject("123456789").goToWorkspaces().goToCreateChildWorkspace()
+        CreateWorkspaceForm createWorkspaceForm = homePage.goToTopMenu().goToHomePage().goToAllProjects().useEllipsisMenu("").edit().selectProcesses(3)
+                .saveProject().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
                 .selectWorkspaceFromTags("Biologics").cancel().goToWorkspaces().goToEllipsisMenu().createChildWorkspace();
 
         Assertions.assertTrue(createWorkspaceForm.customWorkspaceName.isDisplayed());
     }
 
+    @Test
+    @DisplayName("BMSQKNCT-11861 Create Workspace from Template from View All Workspaces page")
+    void createWorkspaceFromTemplateFromViewAllWorkspacesPage() {
 
+        ProjectPage projectPage = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+                .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").removeChips("Chemistry").selectWorkspaceFromTags("Chemistry")
+                .selectWorkspaceFromTags("Route Scouting").createChildWorkspace();
+    }
 }

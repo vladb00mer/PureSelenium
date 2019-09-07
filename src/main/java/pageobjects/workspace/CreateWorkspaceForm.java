@@ -19,9 +19,6 @@ public class CreateWorkspaceForm extends ParentPage {
     @FindBy(xpath = "//a[@ui-id='createNewWSAsKrmTemplate']")
     private WebElement fromTemplateTab;
 
-    @FindBy(xpath = "//button[@aria-label='Remove']")
-    private WebElement removeWorkspaceButton;
-
     @FindBy(xpath = "//a[@ui-id='createNewWSAsCustom']")
     private WebElement customWorkspaceTab;
 
@@ -84,5 +81,11 @@ public class CreateWorkspaceForm extends ParentPage {
 
         clickOnElement(cancelButton);
         return new ProjectPage();
+    }
+
+    public CreateWorkspaceForm removeChips(String tag) {
+
+        Init.getWebDriver().findElement(By.xpath("//button[@ui-id='"+tag+"Remove']")).click();
+        return new CreateWorkspaceForm();
     }
 }
