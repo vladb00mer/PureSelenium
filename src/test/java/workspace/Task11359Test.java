@@ -3,6 +3,7 @@ package workspace;
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
 import pageobjects.project.ProjectPage;
+import pageobjects.workspace.CreateWorkspaceForm;
 
 class Task11359Test {
 
@@ -74,6 +75,12 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11859 Keep automatic creation of the first nodes based on Process selection in Modify Project modal")
     void automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().useEllipsisMenu("123456789").edit();
+        CreateWorkspaceForm createWorkspaceForm = homePage.goToTopMenu().goToHomePage().goToAllProjects().useEllipsisMenu("123456789").edit().selectProcesses(3)
+                .saveProject().filterByProjectName("123456789").openFilteredProject("123456789").goToWorkspaces().goToCreateChildWorkspace()
+                .selectWorkspaceFromTags("Biologics").cancel().goToWorkspaces().goToEllipsisMenu().createChildWorkspace();
+
+        Assertions.assertTrue(createWorkspaceForm.customWorkspaceName.isDisplayed());
     }
+
+
 }

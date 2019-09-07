@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.project.EllipsisMenu;
 import pageobjects.workspace.AllWorkspacesPage;
 import pageobjects.workspace.CreateWorkspaceForm;
 import pageobjects.workspace.WorkspacePage;
@@ -42,6 +43,9 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
 
     @FindBy(xpath = "//a[contains(text(), 'Show more')]")
     private WebElement showMoreButton;
+
+    @FindBy(xpath = "//div[@ui-id='ellipsisMenuWSgrid']")
+    private WebElement ellipsisMenu;
 
 
     public RecentlyUpdatedWorkspacesTable() {
@@ -103,5 +107,11 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
 
         clickOnElement(showMoreButton);
         return this;
+    }
+
+    public EllipsisMenu goToEllipsisMenu() {
+
+        clickOnElement(ellipsisMenu);
+        return new EllipsisMenu();
     }
 }

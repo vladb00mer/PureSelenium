@@ -29,7 +29,7 @@ public class CreateWorkspaceForm extends ParentPage {
     private WebElement fromTemplateWorkspaceName;
 
     @FindBy(xpath = "//input[@id='workspaceName']")
-    private WebElement customWorkspaceName;
+    public WebElement customWorkspaceName;
 
     @FindBy(xpath = "//button[contains(text(), 'Create Workspace')]")
     private WebElement createWorkspaceButton;

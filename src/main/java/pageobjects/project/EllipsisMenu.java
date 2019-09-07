@@ -7,21 +7,24 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageobjects.HomePage;
+import pageobjects.workspace.CreateWorkspaceForm;
 
 public class EllipsisMenu extends ParentPage {
 
-    @FindBy(xpath = "//button[@]")
+    @FindBy(xpath = "//button[@aria-label='Open']")
     private WebElement open;
 
-    @FindBy(xpath = "//button[@]")
+    @FindBy(xpath = "//button[@aria-label='Edit']")
     private WebElement edit;
 
-    @FindBy(xpath = "//button[@]")
+    @FindBy(xpath = "//button[@aria-label='Add to \"My Projects\" list']")
     private WebElement add;
 
+    @FindBy(xpath = "//button[@aria-label='Create Child Workspace']")
+    private WebElement createChildWorkspace;
 
-    EllipsisMenu() {
+
+    public EllipsisMenu() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(add));
@@ -43,5 +46,11 @@ public class EllipsisMenu extends ParentPage {
 
         clickOnElement(add);
         return new AllProjectsPage();
+    }
+
+    public CreateWorkspaceForm createChildWorkspace() {
+
+        clickOnElement(createChildWorkspace);
+        return new CreateWorkspaceForm();
     }
 }
