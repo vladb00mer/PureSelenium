@@ -2,13 +2,11 @@ package workspace;
 
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
-import pageobjects.project.ProjectPage;
 import pageobjects.workspace.CreateWorkspaceForm;
 
 class Task11359Test {
 
     private static HomePage homePage;
-    private static ProjectPage projectPage;
     private static String user = "nadezda_peskun@epam.com";
 
 
