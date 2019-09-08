@@ -100,8 +100,5 @@ class Task11359Test {
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
                 .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Route Scouting")
                 .createChildWorkspace().goToWorkspaces().goToEllipsisMenu().createChildWorkspace().selectWorkspaceFromTags("Route Scouting");
-
-
     }
-
 }

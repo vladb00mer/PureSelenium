@@ -117,29 +117,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Task11359Test.automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="workspace.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="workspace" />
-      <option name="MAIN_CLASS_NAME" value="workspace.Task11359Test" />
-      <option name="METHOD_NAME" value="automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.Task11359Test.automaticCreationOfTheFirstNodesBasedOnProcessSelectionInModifyProjectModal" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00001" summary="ready commit">
-      <created>1556965071898</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1556965071898</updated>
     </task>
     <task id="LOCAL-00002" summary="ready commit">
       <created>1556965143762</created>
@@ -494,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567848352173</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node">
+      <created>1567938683808</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1567938683809</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,7 +489,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="all projects page almost ready" />
     <MESSAGE value="view all projects tests are ready" />
     <MESSAGE value="select project by any filter tests are ready" />
     <MESSAGE value="allure pom extentions" />
@@ -537,7 +513,8 @@
     <MESSAGE value="BMSQKNCT-11845 View of 'Create Workspace' modal opened from PD/View all WSs for Project that doesn't have any Process selected" />
     <MESSAGE value="tests begin" />
     <MESSAGE value="BMSQKNCT-11859 Keep automatic creation of the first nodes based on Process selection in Modify Project modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="BMSQKNCT-11859 Keep automatic creation of the first nodes based on Process selection in Modify Project modal" />
+    <MESSAGE value="BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node" />
+    <option name="LAST_COMMIT_MESSAGE" value="BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
