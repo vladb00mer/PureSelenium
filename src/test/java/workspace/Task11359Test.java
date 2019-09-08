@@ -93,11 +93,15 @@ class Task11359Test {
         Assertions.assertTrue(recentlyUpdatedWorkspacesTable.tableContainsName("Route Scouting"));
     }
 
+    @Test
+    @DisplayName("BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node")
+    void createNonTerminalWorkspaceSameAsExisted() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+                .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Route Scouting")
+                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu().createChildWorkspace().selectWorkspaceFromTags("Route Scouting");
 
 
-
-
-
-
+    }
 
 }
