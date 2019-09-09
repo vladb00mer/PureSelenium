@@ -33,7 +33,7 @@ public class TopMenuPage extends ParentPage {
     private WebElement calendar;
 
 
-    TopMenuPage() {
+    public TopMenuPage() {
 
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(knectionLink));

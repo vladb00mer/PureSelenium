@@ -109,7 +109,7 @@ public class RecentlyUpdatedWorkspacesTable extends ParentPage {
         return this;
     }
 
-    public EllipsisMenu goToEllipsisMenu() {
+    public EllipsisMenu goToEllipsisMenu(String ws) {
 
         clickOnElement(ellipsisMenu);
         return new EllipsisMenu();

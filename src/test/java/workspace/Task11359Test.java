@@ -76,7 +76,7 @@ class Task11359Test {
 
         CreateWorkspaceForm createWorkspaceForm = homePage.goToTopMenu().goToHomePage().goToAllProjects().useEllipsisMenu("").edit().selectProcesses(3)
                 .saveProject().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
-                .selectWorkspaceFromTags("Biologics").cancel().goToWorkspaces().goToEllipsisMenu().createChildWorkspace();
+                .selectWorkspaceFromTags("Biologics").cancel().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace();
 
         Assertions.assertTrue(createWorkspaceForm.customWorkspaceName.isDisplayed());
     }
@@ -99,6 +99,58 @@ class Task11359Test {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
                 .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Route Scouting")
-                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu().createChildWorkspace().selectWorkspaceFromTags("Route Scouting");
+                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromTags("Route Scouting");
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11865 Attempt to create fixed node when Workspace with the same name was created in the same location")
+    void createFixedNodeSameAsExistedWorkspace() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+                .goToWorkspaces().goToEllipsisMenu("Chemistry").createChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("Fixed Node")
+                .createChildWorkspace().goToTopMenu().goToMainMenu().goToAdminManagement().goToKrmManagement().goToEditMode()
+                ;
+        homePage.goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
+                .selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Fixed Node");
+
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11866 Attempt to create already created by template terminal fixed node")
+    void createTerminalFixedNodeSameAsExistedWorkspace() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces()
+                .goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Route Scouting").selectWorkspaceFromTags("Proposal Development")
+                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromTags("Route Scouting")
+                .selectWorkspaceFromTags("Proposal Development");
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11867 Workspace Name instead of Modifier for non-fixed type node")
+    void workspaceNameInsteadOfModifierForNonFixedTypeNode() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces()
+                .goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromTags("Route").setCustomWorkspaceName("").createChildWorkspace()
+                .goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromTags("Step").setCustomWorkspaceName("").createChildWorkspace();
+
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11868 Fill in duplicated Workspace name for type node (when created by template)")
+    void duplicatedWorkspaceNameForTypeNodeWhenCreatedByTemplate() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToEllipsisMenu("")
+                .createChildWorkspace().selectWorkspaceFromTags("Route").setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("")
+                .createChildWorkspace().selectWorkspaceFromTags("Route").setCustomWorkspaceName("");
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11869 Fill in duplicated Workspace name for type node (when created Custom Workspace)")
+    void duplicatedWorkspaceNameForTypeNodeChenCreatedByCustomWorkspace() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToEllipsisMenu("Chemistry")
+                .createChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("Chemistry").createChildWorkspace()
+                .selectWorkspaceFromTags("Route").setCustomWorkspaceName("");
+
     }
 }

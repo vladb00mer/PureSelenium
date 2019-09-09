@@ -24,7 +24,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AdministratorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/KrmManagementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/TopMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/TopMenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,13 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00002" summary="ready commit">
-      <created>1556965143762</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1556965143762</updated>
     </task>
     <task id="LOCAL-00003" summary="ready commit">
       <created>1556965383574</created>
@@ -471,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567938683809</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node">
+      <created>1567939169655</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1567939169655</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.TopMenuPage;
 import pageobjects.tables.RecentlyUpdatedKnowledgeAssetsTable;
 import pageobjects.tables.RecentlyUpdatedWorkspacesTable;
 
@@ -47,6 +48,9 @@ public class ProjectPage extends ParentPage {
     @FindBy(xpath = "//switch-leads/span")
     private WebElement showList;
 
+    @FindBy(xpath = "//div[@ui-id='ellipsisMenuWSgrid']")
+    private WebElement ellipsisMenu;
+
 
     public ProjectPage() {
 
@@ -73,5 +77,16 @@ public class ProjectPage extends ParentPage {
 
         clickOnElement(knowledgeAssetsTable);
         return new RecentlyUpdatedKnowledgeAssetsTable();
+    }
+
+    public TopMenuPage goToTopMenu() {
+
+        return new TopMenuPage();
+    }
+
+    public EllipsisMenu goToEllipsisMenu(String ws) {
+
+        clickOnElement(ellipsisMenu);
+        return new EllipsisMenu();
     }
 }

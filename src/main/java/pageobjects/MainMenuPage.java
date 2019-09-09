@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pageobjects.administrative.AdministratorPage;
 
 
 public class MainMenuPage extends ParentPage {
@@ -49,34 +50,43 @@ public class MainMenuPage extends ParentPage {
 
         clickOnElement(leftMenuDashboard);
     }
+
     public void goToActionItems() {
 
         clickOnElement(leftMenuActionItems);
     }
+
     public void goToMeetings() {
 
         clickOnElement(leftMenuMeetings);
     }
+
     public void goToAllProjects() {
 
         clickOnElement(leftMenuAllProjects);
     }
+
     public void goToHelpCenter() {
 
         clickOnElement(leftMenuHelpCenter);
     }
-    public void goToAdminManagement() {
+
+    public AdministratorPage goToAdminManagement() {
 
         clickOnElement(leftMenuAdminManagement);
+        return new AdministratorPage();
     }
+
     public void goToProfileSettings() {
 
         clickOnElement(leftMenuProfileSettings);
     }
+
     public String getUserName() {
 
         return getTextValue(leftMenuUserName);
     }
+
     public String getUserDepartment() {
 
         return getTextValue(leftMenuDepartment);
