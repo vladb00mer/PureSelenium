@@ -67,7 +67,7 @@ class Task11359Test {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().addNewProject().setProjectName("").setProjectCode("").setApiId("")
                 .selectProcesses(1,4).saveProject().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
-                .selectWorkspaceFromTags("Chemistry").cancel();
+                .selectWorkspaceFromChips("Chemistry").cancel();
     }
 
     @Test
@@ -76,7 +76,7 @@ class Task11359Test {
 
         CreateWorkspaceForm createWorkspaceForm = homePage.goToTopMenu().goToHomePage().goToAllProjects().useEllipsisMenu("").edit().selectProcesses(3)
                 .saveProject().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
-                .selectWorkspaceFromTags("Biologics").cancel().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace();
+                .selectWorkspaceFromChips("Biologics").cancel().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace();
 
         Assertions.assertTrue(createWorkspaceForm.customWorkspaceName.isDisplayed());
     }
@@ -86,8 +86,8 @@ class Task11359Test {
     void createWorkspaceFromTemplateFromViewAllWorkspacesPage() {
 
         RecentlyUpdatedWorkspacesTable recentlyUpdatedWorkspacesTable = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
-                .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").removeChips("Chemistry").selectWorkspaceFromTags("Chemistry")
-                .selectWorkspaceFromTags("Route Scouting").createChildWorkspace().goToWorkspaces();
+                .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").removeChips("Chemistry").selectWorkspaceFromChips("Chemistry")
+                .selectWorkspaceFromChips("Route Scouting").createChildWorkspace().goToWorkspaces();
 
         Assertions.assertTrue(recentlyUpdatedWorkspacesTable.tableContainsName("Chemistry"));
         Assertions.assertTrue(recentlyUpdatedWorkspacesTable.tableContainsName("Route Scouting"));
@@ -98,8 +98,8 @@ class Task11359Test {
     void createNonTerminalWorkspaceSameAsExisted() {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
-                .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Route Scouting")
-                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromTags("Route Scouting");
+                .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").selectWorkspaceFromChips("Route Scouting")
+                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromChips("Route Scouting");
     }
 
     @Test
@@ -111,7 +111,7 @@ class Task11359Test {
                 .createChildWorkspace().goToTopMenu().goToMainMenu().goToAdminManagement().goToKrmManagement().goToEditMode()
                 ;
         homePage.goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
-                .selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Fixed Node");
+                .selectWorkspaceFromChips("Chemistry").selectWorkspaceFromChips("Fixed Node");
 
     }
 
@@ -120,9 +120,9 @@ class Task11359Test {
     void createTerminalFixedNodeSameAsExistedWorkspace() {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces()
-                .goToCreateChildWorkspace().selectWorkspaceFromTags("Chemistry").selectWorkspaceFromTags("Route Scouting").selectWorkspaceFromTags("Proposal Development")
-                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromTags("Route Scouting")
-                .selectWorkspaceFromTags("Proposal Development");
+                .goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").selectWorkspaceFromChips("Route Scouting").selectWorkspaceFromChips("Proposal Development")
+                .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromChips("Route Scouting")
+                .selectWorkspaceFromChips("Proposal Development");
     }
 
     @Test
@@ -130,8 +130,8 @@ class Task11359Test {
     void workspaceNameInsteadOfModifierForNonFixedTypeNode() {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces()
-                .goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromTags("Route").setCustomWorkspaceName("").createChildWorkspace()
-                .goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromTags("Step").setCustomWorkspaceName("").createChildWorkspace();
+                .goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("").createChildWorkspace()
+                .goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromChips("Step").setCustomWorkspaceName("").createChildWorkspace();
 
     }
 
@@ -140,8 +140,8 @@ class Task11359Test {
     void duplicatedWorkspaceNameForTypeNodeWhenCreatedByTemplate() {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToEllipsisMenu("")
-                .createChildWorkspace().selectWorkspaceFromTags("Route").setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("")
-                .createChildWorkspace().selectWorkspaceFromTags("Route").setCustomWorkspaceName("");
+                .createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("")
+                .createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("");
     }
 
     @Test
@@ -150,7 +150,24 @@ class Task11359Test {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToEllipsisMenu("Chemistry")
                 .createChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("Chemistry").createChildWorkspace()
-                .selectWorkspaceFromTags("Route").setCustomWorkspaceName("");
+                .selectWorkspaceFromChips("Route").setCustomWorkspaceName("");
 
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11870 Create several new WSs from different levels at the same time")
+    void createSeveralNewWsFromDifferentLevelsAtTheSameTime() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
+                .setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").createChildWorkspace().goToWorkspaces()
+                .goToCreateChildWorkspace().setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").createChildWorkspace();
+    }
+
+    @Test
+    @DisplayName("BMSQKNCT-11871 Create Workspace from Template (non-terminal)")
+    void createWorkspaceFromNobTerminalTemplate() {
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().openWorkSpaceByName("")
+                .goToCreateChildWorkspace().selectWorkspaceFromChips("").createChildWorkspace();
     }
 }

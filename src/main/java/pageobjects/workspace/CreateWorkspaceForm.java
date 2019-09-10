@@ -53,7 +53,7 @@ public class CreateWorkspaceForm extends ParentPage {
         return this;
     }
 
-    public CreateWorkspaceForm selectWorkspaceFromTags(String tag) {
+    public CreateWorkspaceForm selectWorkspaceFromChips(String tag) {
 
         clickOnElement(Init.getWebDriver().findElement(By.xpath("//button[ui-id='"+tag+"')]")));
         return this;

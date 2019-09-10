@@ -24,13 +24,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AdministratorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/KrmManagementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/TopMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/TopMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/WorkspacePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/WorkspacePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
