@@ -1,5 +1,6 @@
 package workspace;
 
+import common.Init;
 import org.junit.jupiter.api.*;
 import pageobjects.HomePage;
 import pageobjects.tables.RecentlyUpdatedWorkspacesTable;
@@ -8,11 +9,13 @@ import pageobjects.workspace.CreateWorkspaceForm;
 class Task11359Test {
 
     private static HomePage homePage;
-    private static String user = "nadezda_peskun@epam.com";
+    private static String user = "auto_bmsq-knct_qa5@epam.com";
 
 
     @BeforeAll
-    static void setUp() {homePage = new HomePage(user);}
+    static void setUp() {
+        homePage = new HomePage(user);
+    }
 
     @Test
     @DisplayName("BMSQKNCT-11836 Create Child Workspace from Custom WS")
@@ -169,5 +172,11 @@ class Task11359Test {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().openWorkSpaceByName("")
                 .goToCreateChildWorkspace().selectWorkspaceFromChips("").createChildWorkspace();
+    }
+
+    @AfterAll
+    static void tearDown() {
+        homePage = null;
+        Init.closeDriver();
     }
 }

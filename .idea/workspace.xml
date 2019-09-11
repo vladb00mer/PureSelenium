@@ -23,12 +23,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="administrative pages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AuditPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/TagManagementPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/UsersManagementPage.java" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AdministratorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AdministratorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +117,29 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Task11359Test.createChildWorkspaceFromCustomWorkspaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="workspace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="workspace" />
+      <option name="MAIN_CLASS_NAME" value="workspace.Task11359Test" />
+      <option name="METHOD_NAME" value="createChildWorkspaceFromCustomWorkspaceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Task11359Test.createChildWorkspaceFromCustomWorkspaceTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ready commit">
-      <created>1556966169977</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1556966169977</updated>
     </task>
     <task id="LOCAL-00005" summary="ready to work under Windows">
       <created>1557140876124</created>
@@ -474,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568038227416</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="administrative pages begin">
+      <created>1568192586870</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568192586870</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -492,7 +512,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="allure pom extentions" />
     <MESSAGE value="allure binding done" />
     <MESSAGE value="create project form ready" />
     <MESSAGE value="work with checkboxes" />
@@ -517,7 +536,8 @@
     <MESSAGE value="BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node" />
     <MESSAGE value="BMSQKNCT-11869 Fill in duplicated Workspace name for type node (when created Custom Workspace)" />
     <MESSAGE value="administrative pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="administrative pages" />
+    <MESSAGE value="administrative pages begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="administrative pages begin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
