@@ -25,6 +25,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00005" summary="ready to work under Windows">
-      <created>1557140876124</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1557140876124</updated>
     </task>
     <task id="LOCAL-00006" summary="Make fillContactForm method more Generic. That means it depends on data input&#10;Develop one more test in the same test class that fills only text fields in the Contact form&#10;Move common parts of both tests like PO init and log in separately">
       <created>1559055295491</created>
@@ -494,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568192586870</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="administrative pages begin">
+      <created>1568205155783</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1568205155784</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

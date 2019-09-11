@@ -9,23 +9,21 @@ import pageobjects.workspace.CreateWorkspaceForm;
 class Task11359Test {
 
     private static HomePage homePage;
-    private static String user = "auto_bmsq-knct_qa5@epam.com";
+    private static String internalUser = "auto_bmsq-knct_qa3@epam.com";
+    private static String adminUser = "auto_bmsq-knct_qa5@epam.com";
 
-
-    @BeforeAll
-    static void setUp() {
-        homePage = new HomePage(user);
-    }
 
     @Test
     @DisplayName("BMSQKNCT-11836 Create Child Workspace from Custom WS")
     void createChildWorkspaceFromCustomWorkspaceTest() {
 
-        String wsName = homePage
-                .goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
-                .goToFromTemplate().setCustomWorkspaceName("").createChildWorkspace().goToWorkspaces().openWorkSpaceByName("").getWorkspaceName();
+        homePage = new HomePage(internalUser);
 
-        Assertions.assertEquals("customWorkspaceName", wsName);
+        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName2").openFilteredProject("autoTestName2").goToWorkspaces()
+                .goToCreateChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS2").createChildWorkspace().goToWorkspaces()
+                .openWorkSpaceByName("autoTestCustomWS2").getWorkspaceName();
+
+        Assertions.assertEquals(wsName, "autoTestCustomWS2");
     }
 
     @Test

@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Init {
 
     private static WebDriver driver;
-    private static final int TIMEOUT = 5;
+    private static final int TIMEOUT = 10;
 
     public static WebDriver getWebDriver() {
 
