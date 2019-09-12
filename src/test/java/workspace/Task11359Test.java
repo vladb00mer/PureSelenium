@@ -17,9 +17,14 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11836 Create Child Workspace from Custom WS")
     void createChildWorkspaceFromCustomWorkspaceTest() {
 
+        homePage = new HomePage(adminUser);
+
+        homePage.goToAllProjects().addNewProject().setProjectName("autoTestName1").setProjectCode("autoTestCode1").setApiId("autoTestApiId1")
+                .setTherapeuticArea("Metabolics").selectProcesses(1,3).saveProject();
+
         homePage = new HomePage(internalUser);
 
-        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName2").openFilteredProject("autoTestName2").goToWorkspaces()
+        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName1").openFilteredProject("autoTestName1").goToWorkspaces()
                 .goToCreateChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS2").createChildWorkspace().goToWorkspaces()
                 .openWorkSpaceByName("autoTestCustomWS2").getWorkspaceName();
 

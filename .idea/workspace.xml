@@ -25,7 +25,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Task11359Test.test">
     <configuration name="Task11359Test.createChildWorkspaceFromCustomWorkspaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -135,8 +134,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task11359Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="workspace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="workspace" />
+      <option name="MAIN_CLASS_NAME" value="workspace.Task11359Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task11359Test.test" />
         <item itemvalue="JUnit.Task11359Test.createChildWorkspaceFromCustomWorkspaceTest" />
       </list>
     </recent_temporary>
@@ -151,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Make fillContactForm method more Generic. That means it depends on data input&#10;Develop one more test in the same test class that fills only text fields in the Contact form&#10;Move common parts of both tests like PO init and log in separately">
-      <created>1559055295491</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1559055295492</updated>
     </task>
     <task id="LOCAL-00007" summary="setCheckBox() added and tested - ok">
       <created>1559131194445</created>
@@ -495,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568205155784</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; tested - ok">
+      <created>1568213049081</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1568213049081</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="allure binding done" />
     <MESSAGE value="create project form ready" />
     <MESSAGE value="work with checkboxes" />
     <MESSAGE value="add new Project test" />
@@ -538,7 +553,8 @@
     <MESSAGE value="BMSQKNCT-11869 Fill in duplicated Workspace name for type node (when created Custom Workspace)" />
     <MESSAGE value="administrative pages" />
     <MESSAGE value="administrative pages begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="administrative pages begin" />
+    <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; tested - ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; tested - ok" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
