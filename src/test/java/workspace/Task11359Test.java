@@ -19,25 +19,32 @@ class Task11359Test {
 
         homePage = new HomePage(adminUser);
 
-        homePage.goToAllProjects().addNewProject().setProjectName("autoTestName1").setProjectCode("autoTestCode1").setApiId("autoTestApiId1")
+        homePage.goToAllProjects().addNewProject().setProjectName("autoTestName-11836").setProjectCode("autoTestCode-11836").setApiId("autoTestApiId-11836")
                 .setTherapeuticArea("Metabolics").selectProcesses(1,3).saveProject();
 
         homePage = new HomePage(internalUser);
 
-        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName1").openFilteredProject("autoTestName1").goToWorkspaces()
-                .goToCreateChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS2").createChildWorkspace().goToWorkspaces()
-                .openWorkSpaceByName("autoTestCustomWS2").getWorkspaceName();
+        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName-11836").openFilteredProject("autoTestName-11836").goToWorkspaces()
+                .goToCreateChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS-11836").createChildWorkspace().goToWorkspaces()
+                .openWorkSpaceByName("autoTestCustomWS-11836").getWorkspaceName();
 
-        Assertions.assertEquals(wsName, "autoTestCustomWS2");
+        Assertions.assertEquals(wsName, "autoTestCustomWS-11836");
     }
 
     @Test
     @DisplayName("BMSQKNCT-11844 Create Workspace from Template from Project Dashboard")
     void createWorkspacefromTemplateFromProjectDashboardTest() {
 
-        String wsName = homePage
-                .goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace().goToFromTemplate()
-                                .setWorkspaceNameFromTemplate("").createChildWorkspace().goToWorkspaces().openWorkSpaceByName("").getWorkspaceName();
+        homePage = new HomePage(adminUser);
+
+        homePage.goToAllProjects().addNewProject().setProjectName("autoTestName-11844").setProjectCode("autoTestCode-11844").setApiId("autoTestApiId-11844")
+                .setTherapeuticArea("Fibrosis").selectProcesses(2,4).saveProject();
+
+        homePage = new HomePage(internalUser);
+
+        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName-11844").openFilteredProject("autoTestName-11844").goToWorkspaces()
+                .goToCreateChildWorkspace().goToFromTemplate().selectWorkspaceFromChips("Chemistry").setWorkspaceNameFromTemplate("fromTemplateWorkspaceName").createChildWorkspace()
+                .goToWorkspaces().openWorkSpaceByName("fromTemplateWorkspaceName").getWorkspaceName();
 
         Assertions.assertEquals("fromTemplateWorkspaceName", wsName);
     }
