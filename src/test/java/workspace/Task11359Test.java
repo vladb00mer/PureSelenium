@@ -9,23 +9,28 @@ import pageobjects.workspace.CreateWorkspaceForm;
 class Task11359Test {
 
     private static HomePage homePage;
+    private static String projectName;
     private static String internalUser = "auto_bmsq-knct_qa3@epam.com";
     private static String adminUser = "auto_bmsq-knct_qa5@epam.com";
 
+    @BeforeAll
+    static void createTestProject() {
+
+        homePage = new HomePage(adminUser);
+        projectName = "autoTest"+Init.getCurrentDateTime();
+
+        homePage.goToAllProjects().addNewProject().setProjectName(projectName).setProjectCode(projectName).setApiId(projectName)
+                .setTherapeuticArea("Metabolics").selectProcesses(1,3).saveProject();
+    }
 
     @Test
     @DisplayName("BMSQKNCT-11836 Create Child Workspace from Custom WS")
     void createChildWorkspaceFromCustomWorkspaceTest() {
 
-        homePage = new HomePage(adminUser);
-
-        homePage.goToAllProjects().addNewProject().setProjectName("autoTestName-11836").setProjectCode("autoTestCode-11836").setApiId("autoTestApiId-11836")
-                .setTherapeuticArea("Metabolics").selectProcesses(1,3).saveProject();
-
         homePage = new HomePage(internalUser);
 
-        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName-11836").openFilteredProject("autoTestName-11836").goToWorkspaces()
-                .goToCreateChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS-11836").createChildWorkspace().goToWorkspaces()
+        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName)
+                .goToWorkspaces().goToCreateChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS-11836").createChildWorkspace().goToWorkspaces()
                 .openWorkSpaceByName("autoTestCustomWS-11836").getWorkspaceName();
 
         Assertions.assertEquals(wsName, "autoTestCustomWS-11836");
@@ -35,15 +40,10 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11844 Create Workspace from Template from Project Dashboard")
     void createWorkspacefromTemplateFromProjectDashboardTest() {
 
-        homePage = new HomePage(adminUser);
-
-        homePage.goToAllProjects().addNewProject().setProjectName("autoTestName-11844").setProjectCode("autoTestCode-11844").setApiId("autoTestApiId-11844")
-                .setTherapeuticArea("Fibrosis").selectProcesses(2,4).saveProject();
-
         homePage = new HomePage(internalUser);
 
-        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("autoTestName-11844").openFilteredProject("autoTestName-11844").goToWorkspaces()
-                .goToCreateChildWorkspace().goToFromTemplate().selectWorkspaceFromChips("Chemistry").setWorkspaceNameFromTemplate("fromTemplateWorkspaceName").createChildWorkspace()
+        String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName)
+                .goToWorkspaces().goToCreateChildWorkspace().goToFromTemplate().selectWorkspaceFromChips("Chemistry").setWorkspaceNameFromTemplate("fromTemplateWorkspaceName").createChildWorkspace()
                 .goToWorkspaces().openWorkSpaceByName("fromTemplateWorkspaceName").getWorkspaceName();
 
         Assertions.assertEquals("fromTemplateWorkspaceName", wsName);
@@ -54,10 +54,10 @@ class Task11359Test {
     void defaultTabWithoutAnyProcessSelectedTest() {
 
         String wsName = homePage
-                .goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
+                .goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace()
                 .goToCustomWorkspace().goToFromTemplate().cancel().goToWorkspaces().viewAllWorkspaces().createChildWorkspace().cancel().getProjectName();
 
-        Assertions.assertEquals("", wsName);
+        Assertions.assertEquals(projectName, wsName);
     }
 
     @Test

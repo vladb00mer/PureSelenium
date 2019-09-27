@@ -3,6 +3,9 @@ package common;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class Init {
 
     private static WebDriver driver;
@@ -29,6 +32,11 @@ public class Init {
     public static int getTimeOut() {
 
         return TIMEOUT;
+    }
+
+    public static String getCurrentDateTime() {
+
+        return new SimpleDateFormat("ddMMyy-HHmm").format(Calendar.getInstance().getTime());
     }
 
     public static void closeDriver() {
