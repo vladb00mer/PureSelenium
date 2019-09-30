@@ -19,8 +19,8 @@ class Task11359Test {
         homePage = new HomePage(adminUser);
         projectName = "autoTest"+Init.getCurrentDateTime();
 
-        homePage.goToAllProjects().addNewProject().setProjectName(projectName).setProjectCode(projectName).setApiId(projectName)
-                .setTherapeuticArea("Metabolics").selectProcesses(1,3).saveProject();
+        homePage.goToAllProjects().addNewProject().setProjectName(projectName).setProjectCode("autoTestProjectCode").setApiId("autoTestProjectId").setTherapeuticArea("Metabolics")
+                .selectProcesses(1,3).saveProject();
     }
 
     @Test
@@ -43,10 +43,10 @@ class Task11359Test {
         homePage = new HomePage(internalUser);
 
         String wsName = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName)
-                .goToWorkspaces().goToCreateChildWorkspace().goToFromTemplate().selectWorkspaceFromChips("Chemistry").setWorkspaceNameFromTemplate("fromTemplateWorkspaceName").createChildWorkspace()
-                .goToWorkspaces().openWorkSpaceByName("fromTemplateWorkspaceName").getWorkspaceName();
+                .goToWorkspaces().goToCreateChildWorkspace().goToFromTemplate().selectWorkspaceFromChips("Chemistry").setWorkspaceNameFromTemplate("fromTemplateWorkspaceName-11844").createChildWorkspace()
+                .goToWorkspaces().openWorkSpaceByName("fromTemplateWorkspaceName-11844").getWorkspaceName();
 
-        Assertions.assertEquals("fromTemplateWorkspaceName", wsName);
+        Assertions.assertEquals("fromTemplateWorkspaceName-11844", wsName);
     }
 
     @Test
@@ -64,23 +64,25 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11854 Create Child Workspace from terminal node")
     void customWorkspaceTabByDefaultTest() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace();
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace();
     }
 
     @Test
     @DisplayName("BMSQKNCT-11855 Create Child Workspace for case when KRM WS was deleted")
     void childWorkspaceForDeletedKrmWsTest() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace();
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace();
     }
 
     @Test
     @DisplayName("BMSQKNCT-11856 Keep automatic creation of the first nodes based on Process selection in Add Project modal")
     void keepAutomaticCreationOfTheFirstNodesBasedOnProcessSelectionInAddProjectModalTest() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().addNewProject().setProjectName("").setProjectCode("").setApiId("")
-                .selectProcesses(1,4).saveProject().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
-                .selectWorkspaceFromChips("Chemistry").cancel();
+        String localProjectName = "autoTestProject"+Init.getCurrentDateTime();
+
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().addNewProject().setProjectName(localProjectName).setProjectCode("autoTestProjectCode").setApiId("autoTestProjectId")
+                .setTherapeuticArea("Metabolics").selectProcesses(1,4).saveProject().filterByProjectName(localProjectName).openFilteredProject(localProjectName).goToWorkspaces()
+                .goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").cancel();
     }
 
     @Test
@@ -98,7 +100,7 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11861 Create Workspace from Template from View All Workspaces page")
     void createWorkspaceFromTemplateFromViewAllWorkspacesPage() {
 
-        RecentlyUpdatedWorkspacesTable recentlyUpdatedWorkspacesTable = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+        RecentlyUpdatedWorkspacesTable recentlyUpdatedWorkspacesTable = homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName)
                 .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").removeChips("Chemistry").selectWorkspaceFromChips("Chemistry")
                 .selectWorkspaceFromChips("Route Scouting").createChildWorkspace().goToWorkspaces();
 
@@ -110,7 +112,7 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11862 Attempt to create already created by template non-terminal fixed node")
     void createNonTerminalWorkspaceSameAsExisted() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName)
                 .goToWorkspaces().goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").selectWorkspaceFromChips("Route Scouting")
                 .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromChips("Route Scouting");
     }
@@ -119,11 +121,11 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11865 Attempt to create fixed node when Workspace with the same name was created in the same location")
     void createFixedNodeSameAsExistedWorkspace() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("")
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName)
                 .goToWorkspaces().goToEllipsisMenu("Chemistry").createChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("Fixed Node")
                 .createChildWorkspace().goToTopMenu().goToMainMenu().goToAdminManagement().goToKrmManagement().goToEditMode()
                 ;
-        homePage.goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
+        homePage.goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace()
                 .selectWorkspaceFromChips("Chemistry").selectWorkspaceFromChips("Fixed Node");
 
     }
@@ -132,7 +134,7 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11866 Attempt to create already created by template terminal fixed node")
     void createTerminalFixedNodeSameAsExistedWorkspace() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces()
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces()
                 .goToCreateChildWorkspace().selectWorkspaceFromChips("Chemistry").selectWorkspaceFromChips("Route Scouting").selectWorkspaceFromChips("Proposal Development")
                 .createChildWorkspace().goToWorkspaces().goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromChips("Route Scouting")
                 .selectWorkspaceFromChips("Proposal Development");
@@ -142,9 +144,9 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11867 Workspace Name instead of Modifier for non-fixed type node")
     void workspaceNameInsteadOfModifierForNonFixedTypeNode() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces()
-                .goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("").createChildWorkspace()
-                .goToEllipsisMenu("").createChildWorkspace().selectWorkspaceFromChips("Step").setCustomWorkspaceName("").createChildWorkspace();
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces()
+                .goToEllipsisMenu("Chemistry").createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("autoTestWS-11867").createChildWorkspace()
+                .goToEllipsisMenu("autoTestWS-11867").createChildWorkspace().selectWorkspaceFromChips("Step").setCustomWorkspaceName("autoTestWS-11867").createChildWorkspace();
 
     }
 
@@ -152,18 +154,18 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11868 Fill in duplicated Workspace name for type node (when created by template)")
     void duplicatedWorkspaceNameForTypeNodeWhenCreatedByTemplate() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToEllipsisMenu("")
-                .createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("")
-                .createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("");
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToEllipsisMenu("")
+                .createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("autoTestCustomWS-11868").createChildWorkspace().goToEllipsisMenu("")
+                .createChildWorkspace().selectWorkspaceFromChips("Route").setCustomWorkspaceName("autoTestCustomWS-11868");
     }
 
     @Test
     @DisplayName("BMSQKNCT-11869 Fill in duplicated Workspace name for type node (when created Custom Workspace)")
     void duplicatedWorkspaceNameForTypeNodeChenCreatedByCustomWorkspace() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToEllipsisMenu("Chemistry")
-                .createChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("").createChildWorkspace().goToEllipsisMenu("Chemistry").createChildWorkspace()
-                .selectWorkspaceFromChips("Route").setCustomWorkspaceName("");
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToEllipsisMenu("Chemistry")
+                .createChildWorkspace().goToCustomWorkspace().setCustomWorkspaceName("autoTestCustomWS-11869").createChildWorkspace().goToEllipsisMenu("Chemistry").createChildWorkspace()
+                .selectWorkspaceFromChips("Route").setCustomWorkspaceName("autoTestCustomWS-11868");
 
     }
 
@@ -171,7 +173,7 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11870 Create several new WSs from different levels at the same time")
     void createSeveralNewWsFromDifferentLevelsAtTheSameTime() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().goToCreateChildWorkspace()
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace()
                 .setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").createChildWorkspace().goToWorkspaces()
                 .goToCreateChildWorkspace().setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").createChildWorkspace();
     }
@@ -180,7 +182,7 @@ class Task11359Test {
     @DisplayName("BMSQKNCT-11871 Create Workspace from Template (non-terminal)")
     void createWorkspaceFromNobTerminalTemplate() {
 
-        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName("").openFilteredProject("").goToWorkspaces().openWorkSpaceByName("")
+        homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().openWorkSpaceByName("")
                 .goToCreateChildWorkspace().selectWorkspaceFromChips("").createChildWorkspace();
     }
 

@@ -25,7 +25,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add .gitignore">
-      <created>1559135176812</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1559135176812</updated>
     </task>
     <task id="LOCAL-00010" summary="add validation tests">
       <created>1559204994065</created>
@@ -495,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568383445782</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="project name with current date&#10;project creation only once at suite">
+      <created>1569566903013</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1569566903014</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +512,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add new Project test" />
     <MESSAGE value="add new Project test ready" />
     <MESSAGE value="more actions for projects" />
     <MESSAGE value="knowledge assets table begin" />
@@ -538,7 +536,8 @@
     <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; tested - ok" />
     <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; - ready to use from scratch (with test data creation)" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard - done" />
-    <option name="LAST_COMMIT_MESSAGE" value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard - done" />
+    <MESSAGE value="project name with current date&#10;project creation only once at suite" />
+    <option name="LAST_COMMIT_MESSAGE" value="project name with current date&#10;project creation only once at suite" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
