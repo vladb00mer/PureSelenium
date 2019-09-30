@@ -151,13 +151,6 @@
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
     </task>
-    <task id="LOCAL-00010" summary="add validation tests">
-      <created>1559204994065</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1559204994065</updated>
-    </task>
     <task id="LOCAL-00011" summary="validation done, Task128 done and tested - ok">
       <created>1559215831770</created>
       <option name="number" value="00011" />
@@ -494,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569566903014</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="some additional test data">
+      <created>1569831397158</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1569831397159</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,7 +512,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add new Project test ready" />
     <MESSAGE value="more actions for projects" />
     <MESSAGE value="knowledge assets table begin" />
     <MESSAGE value="create project" />
@@ -537,7 +536,8 @@
     <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; - ready to use from scratch (with test data creation)" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard - done" />
     <MESSAGE value="project name with current date&#10;project creation only once at suite" />
-    <option name="LAST_COMMIT_MESSAGE" value="project name with current date&#10;project creation only once at suite" />
+    <MESSAGE value="some additional test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="some additional test data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

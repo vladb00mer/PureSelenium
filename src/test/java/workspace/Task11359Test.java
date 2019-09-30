@@ -10,14 +10,14 @@ class Task11359Test {
 
     private static HomePage homePage;
     private static String projectName;
-    private static String internalUser = "auto_bmsq-knct_qa3@epam.com";
     private static String adminUser = "auto_bmsq-knct_qa5@epam.com";
+    private static String internalUser = "auto_bmsq-knct_qa3@epam.com";
 
     @BeforeAll
     static void createTestProject() {
 
         homePage = new HomePage(adminUser);
-        projectName = "autoTest"+Init.getCurrentDateTime();
+        projectName = "autoTestProject"+Init.getCurrentDateTime();
 
         homePage.goToAllProjects().addNewProject().setProjectName(projectName).setProjectCode("autoTestProjectCode").setApiId("autoTestProjectId").setTherapeuticArea("Metabolics")
                 .selectProcesses(1,3).saveProject();
