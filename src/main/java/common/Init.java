@@ -13,13 +13,11 @@ public class Init {
 
     public static WebDriver getWebDriver() {
 
+        if(System.getProperty("os.name").startsWith("Windows"))
+            System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
 
-        //MacOS driver
-        System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
-
-        //Windows driver
-        //System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver.exe");
-
+        else if(System.getProperty("os.name").startsWith("Mac"))
+            System.setProperty("webdriver.chrome.driver", "./WebDrivers/chromedriver");
 
         if(driver == null) {
             driver = new ChromeDriver();

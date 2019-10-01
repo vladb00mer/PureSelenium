@@ -174,8 +174,11 @@ class Task11359Test {
     void createSeveralNewWsFromDifferentLevelsAtTheSameTime() {
 
         homePage.goToTopMenu().goToHomePage().goToAllProjects().filterByProjectName(projectName).openFilteredProject(projectName).goToWorkspaces().goToCreateChildWorkspace()
-                .setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").createChildWorkspace().goToWorkspaces()
-                .goToCreateChildWorkspace().setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").setWorkspaceNameFromTemplate("").createChildWorkspace();
+                .selectWorkspaceFromChips("Process1").selectWorkspaceFromChips("Type Node1").selectWorkspaceFromChips("Type Node1").createChildWorkspace().goToWorkspaces()
+                .goToCreateChildWorkspace().selectWorkspaceFromChips("Process1").selectWorkspaceFromChips("Type Node1").selectWorkspaceFromChips("Type Node1")
+                .selectWorkspaceFromChips("Terminal Node").createChildWorkspace();
+
+
     }
 
     @Test
