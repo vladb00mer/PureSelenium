@@ -42,7 +42,7 @@ public class HomePage extends ParentPage {
 
     public HomePage(String user) {
 
-        Init.getWebDriver().navigate().to("http://ecsc00a0154c.epam.com:82/Home?ssoUserId="+user);
+        Init.getWebDriver().navigate().to("yandex.ru");
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(myProjectsHeader));
     }

@@ -26,31 +26,11 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="cleared">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/MainMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AdministratorPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/AuditPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/KrmManagementPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/TagManagementPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/administrative/UsersManagementPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/AllProjectsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/CreateProjectForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/EllipsisMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/EllipsisMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ModifyProjectForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/project/ProjectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentFavoritesTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentKnowledgeAssets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/MyRecentWorkspaces.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedKnowledgeAssetsTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/tables/RecentlyUpdatedWorkspacesTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/AllWorkspacesPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/CreateWorkspaceForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/workspace/WorkspacePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/CreateProjectTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/workspace/Task11359Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebDrivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/WebDrivers/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebDrivers/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +106,61 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.AllProjectsPageTest">
+    <configuration name="AllProjectsPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project" />
+      <option name="MAIN_CLASS_NAME" value="project.AllProjectsPageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project" />
+      <option name="MAIN_CLASS_NAME" value="project.HomePageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.testSearchByProjectNameFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project" />
+      <option name="MAIN_CLASS_NAME" value="project.HomePageTest" />
+      <option name="METHOD_NAME" value="testSearchByProjectNameFilter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AllProjectsPageTest" />
+        <item itemvalue="JUnit.HomePageTest" />
+        <item itemvalue="JUnit.HomePageTest.testSearchByProjectNameFilter" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -137,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00012" summary="cleaned">
-      <created>1566287724576</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1566287724576</updated>
     </task>
     <task id="LOCAL-00013" summary="cleaned">
       <created>1566288032294</created>
@@ -481,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569831552168</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="cleared">
+      <created>1614244856546</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1614244856547</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="more actions for projects" />
     <MESSAGE value="knowledge assets table begin" />
     <MESSAGE value="create project" />
     <MESSAGE value="recently updated workspaces almost done" />
@@ -523,7 +557,8 @@
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard - done" />
     <MESSAGE value="project name with current date&#10;project creation only once at suite" />
     <MESSAGE value="some additional test data" />
-    <option name="LAST_COMMIT_MESSAGE" value="some additional test data" />
+    <MESSAGE value="cleared" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleared" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
