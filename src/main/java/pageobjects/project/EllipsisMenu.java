@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageobjects.workspace.CreateWorkspaceForm;
 
 public class EllipsisMenu extends ParentPage {
 
@@ -36,21 +35,9 @@ public class EllipsisMenu extends ParentPage {
         return new ProjectPage();
     }
 
-    public ModifyProjectForm edit() {
-
-        clickOnElement(edit);
-        return new ModifyProjectForm();
-    }
-
     public AllProjectsPage add() {
 
         clickOnElement(add);
         return new AllProjectsPage();
-    }
-
-    public CreateWorkspaceForm createChildWorkspace() {
-
-        clickOnElement(createChildWorkspace);
-        return new CreateWorkspaceForm();
     }
 }

@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pageobjects.administrative.AdministratorPage;
 
 
 public class MainMenuPage extends ParentPage {
@@ -71,11 +70,6 @@ public class MainMenuPage extends ParentPage {
         clickOnElement(leftMenuHelpCenter);
     }
 
-    public AdministratorPage goToAdminManagement() {
-
-        clickOnElement(leftMenuAdminManagement);
-        return new AdministratorPage();
-    }
 
     public void goToProfileSettings() {
 

@@ -8,8 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.TopMenuPage;
-import pageobjects.tables.RecentlyUpdatedKnowledgeAssetsTable;
-import pageobjects.tables.RecentlyUpdatedWorkspacesTable;
 
 import java.util.List;
 
@@ -65,18 +63,6 @@ public class ProjectPage extends ParentPage {
     public String getFirstWorkspaceNameFromTable() {
 
         return getTextValue(workspacesTableNames.get(0));
-    }
-
-    public RecentlyUpdatedWorkspacesTable goToWorkspaces() {
-
-        clickOnElement(workspacesTable);
-        return new RecentlyUpdatedWorkspacesTable();
-    }
-
-    public RecentlyUpdatedKnowledgeAssetsTable goToKnowledgeAssets() {
-
-        clickOnElement(knowledgeAssetsTable);
-        return new RecentlyUpdatedKnowledgeAssetsTable();
     }
 
     public TopMenuPage goToTopMenu() {
