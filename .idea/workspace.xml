@@ -27,10 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="cleared">
+      <change afterPath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebDrivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/WebDrivers/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebDrivers/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AllProjectsPageTest">
+  <component name="RunManager" selected="JUnit.RestTest">
     <configuration name="AllProjectsPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -153,8 +153,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rest" />
+      <option name="MAIN_CLASS_NAME" value="rest.RestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestTest" />
         <item itemvalue="JUnit.AllProjectsPageTest" />
         <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="JUnit.HomePageTest.testSearchByProjectNameFilter" />
@@ -172,13 +188,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00013" summary="cleaned">
-      <created>1566288032294</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1566288032294</updated>
     </task>
     <task id="LOCAL-00014" summary="up and left menu almost done">
       <created>1566310620271</created>
@@ -516,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614244856547</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="cleared">
+      <created>1614246657462</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1614246657462</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

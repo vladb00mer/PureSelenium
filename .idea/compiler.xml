@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pure-selenium-junit5" />
         <module name="PureSelenium" />
+        <module name="pure-selenium-junit5" />
       </profile>
     </annotationProcessing>
   </component>
