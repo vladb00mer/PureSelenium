@@ -9,8 +9,8 @@ class AllProjectsPageTest {
 
     private static HomePage homePage;
     private ProjectPage projectPage;
-    private static String user = "nadezda_peskun@epam.com";
-    private String projectName = "123456789";
+    private static String user = "user";
+    private String projectName = "project";
 
     @BeforeAll
     static void setUp() {
