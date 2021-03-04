@@ -10,22 +10,23 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends ParentPage {
 
-    @FindBy(xpath = "//span[contains(text(), 'My Projects ')]")
-    private WebElement searchArea;
-
-    @FindBy(xpath = "//a[@title='View All Project']")
+    @FindBy(xpath = "//span[contains(text(), 'Найти')]")
     private WebElement searchButton;
+
+    @FindBy(xpath = "//input[@id = 'text']")
+    private WebElement searchArea;
 
     public HomePage() {
 
-        Init.getWebDriver().navigate().to("yandex.ru");
+        Init.getWebDriver().navigate().to("http://yandex.ru");
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(searchArea));
     }
 
-    public HomePage search(String name) {
+    public HomePage search(String request) {
 
-        setTextValue(searchArea, name);
+        setTextValue(searchArea, request);
+        clickOnElement(searchButton);
         return this;
     }
 }

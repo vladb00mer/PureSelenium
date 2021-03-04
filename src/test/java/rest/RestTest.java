@@ -31,5 +31,4 @@ public class RestTest {
         baseUri = null;
         RestAssured.reset();
     }
-
 }

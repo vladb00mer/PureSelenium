@@ -16,8 +16,8 @@ class HomePageTest {
 
     @Test
     @DisplayName("Тестирование поиска")
-    void testSearchByProjectNameFilter() {
-
+    void testSearch(String request) {
+        homePage.search(request);
     }
 
     @AfterAll
