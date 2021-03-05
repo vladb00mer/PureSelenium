@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends ParentPage {
 
-    @FindBy(xpath = "//span[contains(text(), 'Найти')]")
+    @FindBy(xpath = "//button[contains(text(), 'Найти')]")
     private WebElement searchButton;
 
     @FindBy(xpath = "//input[@id = 'text']")

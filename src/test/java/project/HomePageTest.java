@@ -7,16 +7,16 @@ import pageobjects.HomePage;
 class HomePageTest {
 
     private static HomePage homePage;
-    private static String request = "тестовый запрос";
+    private static String request;
 
     @BeforeAll
     static void setUp() {
         homePage = new HomePage();
+        request = "test";
     }
 
     @Test
-    @DisplayName("Тестирование поиска")
-    void testSearch(String request) {
+    void testSearch() {
         homePage.search(request);
     }
 
@@ -24,5 +24,6 @@ class HomePageTest {
     static void tearDown() {
         Init.closeDriver();
         homePage = null;
+        request = null;
     }
 }

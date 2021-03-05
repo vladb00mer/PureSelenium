@@ -106,7 +106,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest.testSearch">
+  <component name="RunManager" selected="JUnit.HomePageTest">
     <configuration name="AllProjectsPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -186,8 +186,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HomePageTest.testSearch" />
         <item itemvalue="JUnit.HomePageTest" />
+        <item itemvalue="JUnit.HomePageTest.testSearch" />
         <item itemvalue="JUnit.RestTest" />
         <item itemvalue="JUnit.AllProjectsPageTest" />
         <item itemvalue="JUnit.HomePageTest.testSearchByProjectNameFilter" />
@@ -205,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00016" summary="working with controls">
-      <created>1566402784274</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1566402784275</updated>
     </task>
     <task id="LOCAL-00017" summary="demo test ready">
       <created>1566405622954</created>
@@ -549,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614864321229</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="cleared">
+      <created>1614866111920</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1614866111920</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
