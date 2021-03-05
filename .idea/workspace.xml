@@ -27,10 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="cleared">
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatirTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="project.*" />
+          <option name="PATTERN" value="webinterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +126,12 @@
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="project.*" />
+          <option name="PATTERN" value="webinterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="project" />
-      <option name="MAIN_CLASS_NAME" value="project.HomePageTest" />
+      <option name="PACKAGE_NAME" value="webinterface" />
+      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,12 +141,12 @@
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="project.*" />
+          <option name="PATTERN" value="webinterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="project" />
-      <option name="MAIN_CLASS_NAME" value="project.HomePageTest" />
+      <option name="PACKAGE_NAME" value="webinterface" />
+      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
       <option name="METHOD_NAME" value="testSearch(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -157,12 +157,12 @@
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="project.*" />
+          <option name="PATTERN" value="webinterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="project" />
-      <option name="MAIN_CLASS_NAME" value="project.HomePageTest" />
+      <option name="PACKAGE_NAME" value="webinterface" />
+      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
       <option name="METHOD_NAME" value="testSearchByProjectNameFilter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -205,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00017" summary="demo test ready">
-      <created>1566405622954</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1566405622955</updated>
     </task>
     <task id="LOCAL-00018" summary="additional demo tests are ready">
       <created>1566549482705</created>
@@ -549,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614866111920</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="cleared">
+      <created>1614922223949</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1614922223950</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,4 +1,4 @@
-package project;
+package webinterface;
 
 import common.Init;
 import org.junit.jupiter.api.*;
