@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.AfterAll;
@@ -35,7 +36,8 @@ public class RestTest {
     @DisplayName("Rest Test")
     @Test
     public void restTest() {
-        given().when().get();
+        Response response = given().when().get();
+        System.out.println(response.asPrettyString());
     }
 
     @AfterAll

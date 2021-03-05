@@ -28,9 +28,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="backend and all tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in pure-selenium-junit5 (1)">
+  <component name="RunManager" selected="JUnit.RestTest.restTest">
     <configuration name="All in pure-selenium-junit5 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -138,21 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webinterface.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webinterface" />
-      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -168,13 +151,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestTest.restTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rest" />
+      <option name="MAIN_CLASS_NAME" value="rest.RestTest" />
+      <option name="METHOD_NAME" value="restTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestTest.restTest" />
         <item itemvalue="JUnit.All in pure-selenium-junit5 (1)" />
         <item itemvalue="JUnit.RestTest" />
         <item itemvalue="JUnit.All in pure-selenium-junit5" />
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.HomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,13 +188,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00020" summary="all projects page almost ready">
-      <created>1566567682707</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1566567682707</updated>
     </task>
     <task id="LOCAL-00021" summary="all projects page almost ready">
       <created>1566571233078</created>
@@ -533,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614947843039</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="backend and all tests">
+      <created>1614955685195</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1614955685195</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
