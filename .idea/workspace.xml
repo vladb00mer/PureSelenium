@@ -26,11 +26,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="cleared">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatirTest.java" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="backend and all tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/backend/CalculatirTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest">
+  <component name="RunManager" selected="JUnit.CalculatorTest">
     <configuration name="AllProjectsPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -117,6 +115,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="project" />
       <option name="MAIN_CLASS_NAME" value="project.AllProjectsPageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backend" />
+      <option name="MAIN_CLASS_NAME" value="backend.CalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,22 +166,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testSearchByProjectNameFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webinterface.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webinterface" />
-      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
-      <option name="METHOD_NAME" value="testSearchByProjectNameFilter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
@@ -186,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="JUnit.HomePageTest" />
         <item itemvalue="JUnit.HomePageTest.testSearch" />
         <item itemvalue="JUnit.RestTest" />
         <item itemvalue="JUnit.AllProjectsPageTest" />
-        <item itemvalue="JUnit.HomePageTest.testSearchByProjectNameFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -205,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00018" summary="additional demo tests are ready">
-      <created>1566549482705</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1566549482705</updated>
     </task>
     <task id="LOCAL-00019" summary="additional demo tests are ready">
       <created>1566552353630</created>
@@ -549,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614922223950</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="cleared">
+      <created>1614940379808</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1614940379808</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="knowledge assets table begin" />
     <MESSAGE value="create project" />
     <MESSAGE value="recently updated workspaces almost done" />
     <MESSAGE value="recently updated tables almost done" />
@@ -591,7 +587,8 @@
     <MESSAGE value="project name with current date&#10;project creation only once at suite" />
     <MESSAGE value="some additional test data" />
     <MESSAGE value="cleared" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleared" />
+    <MESSAGE value="backend and all tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend and all tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
