@@ -15,6 +15,7 @@ class HomePageTest {
         request = "test";
     }
 
+    @DisplayName("Search Test")
     @Test
     void testSearch() {
         homePage.search(request);
