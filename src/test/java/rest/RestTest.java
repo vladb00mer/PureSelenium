@@ -10,10 +10,12 @@ import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
+
 
 public class RestTest {
 
@@ -28,20 +30,21 @@ public class RestTest {
             .build();
 
     @BeforeAll
-    public static void setUpAll() {
+    static void setUpAll() {
         RestAssured.requestSpecification = requestSpecification;
         RestAssured.responseSpecification = responseSpecification;
     }
 
-    @DisplayName("Rest Test")
     @Test
-    public void restTest() {
+    @DisplayName("Rest Test")
+    @Tag("Rest")
+    void restTest() {
         Response response = given().when().get();
-        System.out.println(response.asPrettyString());
+        //System.out.println(response.asPrettyString());
     }
 
     @AfterAll
-    public static void tearDown() {
+    static void tearDown() {
         RestAssured.reset();
     }
 }

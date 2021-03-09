@@ -1,8 +1,13 @@
 package webinterface;
 
 import common.Init;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 import pageobjects.HomePage;
+
 
 class HomePageTest {
 
@@ -15,9 +20,11 @@ class HomePageTest {
         request = "test";
     }
 
-    @DisplayName("Search Test")
     @Test
+    @DisplayName("Search UI Test")
+    @Tag("UI")
     void testSearch() {
+
         homePage.search(request);
     }
 

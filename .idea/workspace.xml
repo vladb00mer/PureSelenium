@@ -26,9 +26,11 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="backend and all tests">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="final demo version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,15 +106,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RestTest.restTest">
-    <configuration name="All in pure-selenium-junit5 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="All in pure-selenium-junit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,59 +115,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="backend" />
-      <option name="MAIN_CLASS_NAME" value="backend.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rest" />
-      <option name="MAIN_CLASS_NAME" value="rest.RestTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestTest.restTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pure-selenium-junit5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rest" />
-      <option name="MAIN_CLASS_NAME" value="rest.RestTest" />
-      <option name="METHOD_NAME" value="restTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RestTest.restTest" />
-        <item itemvalue="JUnit.All in pure-selenium-junit5 (1)" />
-        <item itemvalue="JUnit.RestTest" />
         <item itemvalue="JUnit.All in pure-selenium-junit5" />
-        <item itemvalue="JUnit.CalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00021" summary="all projects page almost ready">
-      <created>1566571233078</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1566571233078</updated>
     </task>
     <task id="LOCAL-00022" summary="view all projects tests are ready">
       <created>1566633810470</created>
@@ -532,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614955685195</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="final demo version">
+      <created>1614956206224</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1614956206224</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="create project" />
     <MESSAGE value="recently updated workspaces almost done" />
     <MESSAGE value="recently updated tables almost done" />
     <MESSAGE value="my recent" />
@@ -574,7 +517,8 @@
     <MESSAGE value="some additional test data" />
     <MESSAGE value="cleared" />
     <MESSAGE value="backend and all tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend and all tests" />
+    <MESSAGE value="final demo version" />
+    <option name="LAST_COMMIT_MESSAGE" value="final demo version" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

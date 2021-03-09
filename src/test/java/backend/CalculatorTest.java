@@ -2,10 +2,13 @@ package backend;
 
 import common.Init;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CalculatorTest {
@@ -17,28 +20,38 @@ public class CalculatorTest {
         calculator = new Calculator();
     }
 
+
+    @Test
     @DisplayName("Plus Test")
-    @Test
+    @Tag("Calculator")
     void testPlus() {
-        Assertions.assertEquals(calculator.plus(2,3),  5);
+
+        assertEquals(calculator.plus(2,3),  5, "Assertion Error! 2+3=5");
     }
 
+    @Test
     @DisplayName("Minus Test")
-    @Test
+    @Tag("Calculator")
+    @Disabled("!disabling demonstration!")
     void testMinus() {
-        Assertions.assertEquals(calculator.minus(3,2), 1);
+
+        assertEquals(calculator.minus(3,2), 1, "Assertion Error! 3-2=1");
     }
 
+    @Test
     @DisplayName("Multiply Test")
-    @Test
+    @Tag("Calculator")
     void testMultiply() {
-        Assertions.assertEquals(calculator.multiply(2,4),8);
+
+        assertEquals(calculator.multiply(2,4),8, "Assertion Error! 2*4=8");
     }
 
-    @DisplayName("Divide Test")
     @Test
+    @DisplayName("Divide Test")
+    @Tag("Calculator")
     void testDivide() {
-        Assertions.assertEquals(calculator.divide(4,2), 2);
+
+        assertEquals(calculator.divide(4,2), 2, "Assertion Error! 4/2=2");
     }
 
     @AfterAll
