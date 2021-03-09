@@ -22,7 +22,7 @@ class HomePageTest {
 
     @Test
     @DisplayName("Search UI Test")
-    @Tag("UI")
+    @Tag("ui")
     void testSearch() {
 
         homePage.search(request);

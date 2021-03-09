@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends ParentPage {
 
-    @FindBy(xpath = "//button[contains(text(), 'Найти')]")
+    @FindBy(xpath = "//button[@type = 'submit']")
     private WebElement searchButton;
 
     @FindBy(xpath = "//input[@id = 'text']")
@@ -18,7 +18,7 @@ public class HomePage extends ParentPage {
 
     public HomePage() {
 
-        Init.getWebDriver().navigate().to("http://yandex.ru");
+        Init.getWebDriver().navigate().to("http://ya.ru");
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(searchArea));
     }

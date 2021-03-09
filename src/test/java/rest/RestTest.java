@@ -20,13 +20,13 @@ import static org.hamcrest.Matchers.containsString;
 public class RestTest {
 
     private static RequestSpecification requestSpecification = new RequestSpecBuilder()
-            .setBaseUri("http://yandex.ru")
+            .setBaseUri("http://ya.ru")
             .setContentType(ContentType.JSON)
             .build();
 
     private static ResponseSpecification responseSpecification = new ResponseSpecBuilder()
             .expectStatusCode(200)
-            .expectBody(containsString("success"))
+            .expectBody(containsString("Яндекс"))
             .build();
 
     @BeforeAll
@@ -37,10 +37,10 @@ public class RestTest {
 
     @Test
     @DisplayName("Rest Test")
-    @Tag("Rest")
+    @Tag("rest")
     void restTest() {
         Response response = given().when().get();
-        //System.out.println(response.asPrettyString());
+        System.out.println(response.asPrettyString());
     }
 
     @AfterAll

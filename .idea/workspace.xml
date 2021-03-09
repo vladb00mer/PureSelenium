@@ -26,8 +26,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="final demo version">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="new annotations and imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" afterDir="false" />
@@ -89,21 +90,21 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="workspace" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="workspace" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,13 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00022" summary="view all projects tests are ready">
-      <created>1566633810470</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1566633810470</updated>
     </task>
     <task id="LOCAL-00023" summary="select project by any filter tests are ready">
       <created>1566635231147</created>
@@ -476,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614956206224</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="new annotations and imports">
+      <created>1615281953590</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1615281953590</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +494,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="recently updated workspaces almost done" />
     <MESSAGE value="recently updated tables almost done" />
     <MESSAGE value="my recent" />
     <MESSAGE value="processes checkboxes" />
@@ -518,7 +518,8 @@
     <MESSAGE value="cleared" />
     <MESSAGE value="backend and all tests" />
     <MESSAGE value="final demo version" />
-    <option name="LAST_COMMIT_MESSAGE" value="final demo version" />
+    <MESSAGE value="new annotations and imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="new annotations and imports" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
