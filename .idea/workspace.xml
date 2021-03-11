@@ -26,9 +26,13 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="new homepage and selectors">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="new assertion for UI test, multi assertion">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebDrivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/webdrivers/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webinterface/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +109,14 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.HomePageTest.testSearch">
+    <configuration name="All in pure-selenium-junit5 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-junit5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in pure-selenium-junit5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pure-selenium-junit5" />
       <option name="PACKAGE_NAME" value="" />
@@ -117,12 +129,12 @@
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webinterface.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webinterface" />
-      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.HomePageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,12 +144,12 @@
       <module name="pure-selenium-junit5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webinterface.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webinterface" />
-      <option name="MAIN_CLASS_NAME" value="webinterface.HomePageTest" />
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.HomePageTest" />
       <option name="METHOD_NAME" value="testSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -148,6 +160,7 @@
       <list>
         <item itemvalue="JUnit.HomePageTest.testSearch" />
         <item itemvalue="JUnit.HomePageTest" />
+        <item itemvalue="JUnit.All in pure-selenium-junit5 (1)" />
         <item itemvalue="JUnit.All in pure-selenium-junit5" />
       </list>
     </recent_temporary>
@@ -163,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00024" summary="allure pom extentions">
-      <created>1566884359232</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1566884359232</updated>
     </task>
     <task id="LOCAL-00025" summary="allure binding done">
       <created>1566897264871</created>
@@ -507,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615295284967</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="new assertion for UI test, multi assertion">
+      <created>1615380821512</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1615380821513</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,7 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="my recent" />
     <MESSAGE value="processes checkboxes" />
     <MESSAGE value="processes checkboxes done" />
     <MESSAGE value="MyRecentWorkspaces selectors" />
@@ -549,7 +561,8 @@
     <MESSAGE value="final demo version" />
     <MESSAGE value="new annotations and imports" />
     <MESSAGE value="new homepage and selectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="new homepage and selectors" />
+    <MESSAGE value="new assertion for UI test, multi assertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="new assertion for UI test, multi assertion" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

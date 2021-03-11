@@ -1,4 +1,4 @@
-package webinterface;
+package ui;
 
 import common.Init;
 import org.junit.jupiter.api.AfterAll;
@@ -22,7 +22,7 @@ class HomePageTest {
     @BeforeAll
     static void setUp() {
         homePage = new HomePage();
-        request = "test";
+        request = "тест";
     }
 
     @Test
@@ -32,7 +32,7 @@ class HomePageTest {
 
         homePage.search(request);
         List<WebElement> result = Init.getWebDriver().findElements(By.xpath("//div/b[contains(text(), '"+request+"')]"));
-        Assertions.assertTrue(result.size() > 0);
+        Assertions.assertTrue(result.size() > 10, "Количество элементов = "+result.size());
     }
 
     @AfterAll

@@ -27,6 +27,13 @@ public class HomePage extends ParentPage {
 
         setTextValue(searchArea, request);
         clickOnElement(searchButton);
+
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return this;
     }
 }
