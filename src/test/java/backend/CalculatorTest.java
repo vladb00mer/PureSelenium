@@ -22,15 +22,15 @@ public class CalculatorTest {
     }
 
     @Test
-    @DisplayName("All Negative Test")
+    @DisplayName("Assert All with one negative")
     @Tag("calculator")
     void testAll() {
 
         assertAll("Multi assertion negative sample",
-                () -> assertEquals(calculator.plus(2,3),  4, "Assertion Error! 2+3=5"),
-                () -> assertEquals(calculator.minus(2,3),  1, "Assertion Error! 3-2=1"),
+                () -> assertEquals(calculator.plus(2,3),  5, "Assertion Error! 2+3=5"),
+                () -> assertEquals(calculator.minus(3,2),  1, "Assertion Error! 3-2=1"),
                 () -> assertEquals(calculator.multiply(2,3),  3, "Assertion Error! 2*4=8"),
-                () -> assertEquals(calculator.divide(2,3),  2, "Assertion Error! 4/2=2")
+                () -> assertEquals(calculator.divide(6,3),  2, "Assertion Error! 4/2=2")
         );
     }
 
@@ -43,7 +43,7 @@ public class CalculatorTest {
     }
 
     @Test
-    @DisplayName("Minus Test")
+    @DisplayName("Minus Test (!disabled!)")
     @Tag("calculator")
     @Disabled("!disabling demonstration!")
     void testMinus() {
