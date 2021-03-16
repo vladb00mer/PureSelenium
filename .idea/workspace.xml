@@ -26,9 +26,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="some new annotations">
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="added empty testng.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +106,23 @@
       <recent name="workspace" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="/Users/b00mer/IdeaProjects/PureSelenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-testng" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/b00mer/IdeaProjects/PureSelenium/testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -117,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00030" summary="knowledge assets table begin">
-      <created>1566995913060</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1566995913060</updated>
     </task>
     <task id="LOCAL-00031" summary="create project">
       <created>1566997347830</created>
@@ -461,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615893839597</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="added empty testng.xml">
+      <created>1615894563391</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1615894563392</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="create workspace begin" />
     <MESSAGE value="create workspace done" />
     <MESSAGE value="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard" />
@@ -503,7 +519,8 @@
     <MESSAGE value="readme updated, some renames" />
     <MESSAGE value="junit changed with testng, some checks moved out" />
     <MESSAGE value="some new annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="some new annotations" />
+    <MESSAGE value="added empty testng.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added empty testng.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
