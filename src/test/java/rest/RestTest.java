@@ -6,8 +6,8 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -26,7 +26,7 @@ public class RestTest {
             .expectBody(containsString("Яндекс"))
             .build();
 
-    @BeforeSuite
+    @BeforeClass
     static void setUpAll() {
         RestAssured.requestSpecification = requestSpecification;
         RestAssured.responseSpecification = responseSpecification;
@@ -37,7 +37,7 @@ public class RestTest {
         given().when().get();
     }
 
-    @AfterSuite
+    @AfterClass
     static void tearDown() {
         RestAssured.reset();
     }

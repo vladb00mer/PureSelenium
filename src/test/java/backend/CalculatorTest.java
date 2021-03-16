@@ -2,8 +2,8 @@ package backend;
 
 import common.Init;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 @Test
@@ -11,7 +11,7 @@ public class CalculatorTest {
 
     private static Calculator calculator;
 
-    @BeforeSuite
+    @BeforeClass
     static void setUp() {
         calculator = new Calculator();
     }
@@ -40,7 +40,7 @@ public class CalculatorTest {
         Assert.assertEquals(calculator.divide(4,2), 2, "Assertion Error! 4/2=2");
     }
 
-    @AfterSuite
+    @AfterClass
     static void tearDown() {
         Init.closeDriver();
         calculator = null;

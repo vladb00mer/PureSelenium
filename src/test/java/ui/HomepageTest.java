@@ -1,11 +1,11 @@
 package ui;
 
 import common.Init;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import pageobjects.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -18,7 +18,7 @@ public class HomepageTest {
     private static HomePage homePage;
     private static String request;
 
-    @BeforeSuite
+    @BeforeClass
     static void setUp() {
         homePage = new HomePage();
         request = "тест";
@@ -32,7 +32,7 @@ public class HomepageTest {
         assertTrue(result.size() > 10, "Количество элементов = "+result.size());
     }
 
-    @AfterSuite
+    @AfterClass
     static void tearDown() {
         Init.closeDriver();
         homePage = null;
