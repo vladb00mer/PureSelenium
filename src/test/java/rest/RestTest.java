@@ -26,18 +26,18 @@ public class RestTest {
             .expectBody(containsString("Яндекс"))
             .build();
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     static void setUpAll() {
         RestAssured.requestSpecification = requestSpecification;
         RestAssured.responseSpecification = responseSpecification;
     }
 
-    @Test(priority = 3, groups = "rest")
+    @Test(groups = {"rest","regress"})
     void restTest() {
         given().when().get();
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     static void tearDown() {
         RestAssured.reset();
     }

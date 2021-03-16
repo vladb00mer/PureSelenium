@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sber META autotests">
-    <test name="Regress">
+    <test name="backandrest">
         <classes>
             <class name="backend.CalculatorTest"/>
             <class name="rest.RestTest"/>

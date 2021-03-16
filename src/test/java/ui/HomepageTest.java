@@ -18,13 +18,13 @@ public class HomepageTest {
     private static HomePage homePage;
     private static String request;
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     static void setUp() {
         homePage = new HomePage();
         request = "тест";
     }
 
-    @Test(priority = 3, groups = "ui")
+    @Test(groups = {"ui","regress"})
     void testSearch() {
 
         homePage.search(request);
@@ -32,7 +32,7 @@ public class HomepageTest {
         assertTrue(result.size() > 10, "Количество элементов = "+result.size());
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     static void tearDown() {
         Init.closeDriver();
         homePage = null;

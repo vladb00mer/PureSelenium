@@ -26,11 +26,15 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="filling testng.xml">
-      <change afterPath="$PROJECT_DIR$/testsuites/backandrest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/restandui.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/uiandback.xml" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="new test suites">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rest/RestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/HomepageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/HomepageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsuites/backandrest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/backandrest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsuites/restandui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/restandui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsuites/uiandback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testsuites/uiandback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +115,34 @@
       <recent name="workspace" />
     </key>
   </component>
+  <component name="RunManager" selected="TestNG./Users/b00mer/IdeaProjects/PureSelenium/testsuites/backandrest.xml">
+    <configuration name="/Users/b00mer/IdeaProjects/PureSelenium/testsuites/backandrest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-testng" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testsuites/backandrest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="pure-selenium-testng" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/b00mer/IdeaProjects/PureSelenium/testsuites/backandrest.xml" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -122,13 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00032" summary="recently updated workspaces almost done">
-      <created>1567074807646</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1567074807646</updated>
     </task>
     <task id="LOCAL-00033" summary="recently updated tables almost done">
       <created>1567154413057</created>
@@ -466,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615895102972</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="new test suites">
+      <created>1615896221815</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1615896221815</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +515,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard" />
     <MESSAGE value="BMSQKNCT-11845 View of 'Create Workspace' modal opened from PD/View all WSs for Project that doesn't have any Process selected" />
     <MESSAGE value="tests begin" />
@@ -508,7 +539,8 @@
     <MESSAGE value="some new annotations" />
     <MESSAGE value="added empty testng.xml" />
     <MESSAGE value="filling testng.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="filling testng.xml" />
+    <MESSAGE value="new test suites" />
+    <option name="LAST_COMMIT_MESSAGE" value="new test suites" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$Main.ic" NAME="Main Coverage Results" MODIFIED="1556708320647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
