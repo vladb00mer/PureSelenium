@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertTrue;
 
-
+@Test
 public class HomepageTest {
 
     private static HomePage homePage;
@@ -24,7 +24,7 @@ public class HomepageTest {
         request = "тест";
     }
 
-    @Test
+    @Test(priority = 3, groups = "ui")
     void testSearch() {
 
         homePage.search(request);

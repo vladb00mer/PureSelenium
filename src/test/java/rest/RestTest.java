@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
-
+@Test
 public class RestTest {
 
     private static RequestSpecification requestSpecification = new RequestSpecBuilder()
@@ -32,7 +32,7 @@ public class RestTest {
         RestAssured.responseSpecification = responseSpecification;
     }
 
-    @Test
+    @Test(priority = 3, groups = "rest")
     void restTest() {
         given().when().get();
     }
