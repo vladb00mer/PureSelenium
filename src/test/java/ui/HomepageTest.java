@@ -1,41 +1,38 @@
 package ui;
 
 import common.Init;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import pageobjects.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pageobjects.HomePage;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
+import static org.testng.Assert.assertTrue;
 
-class HomePageTest {
+
+public class HomepageTest {
 
     private static HomePage homePage;
     private static String request;
 
-    @BeforeAll
+    @BeforeSuite
     static void setUp() {
         homePage = new HomePage();
         request = "тест";
     }
 
     @Test
-    @DisplayName("Search UI Test")
-    @Tag("ui")
     void testSearch() {
 
         homePage.search(request);
         List<WebElement> result = Init.getWebDriver().findElements(By.xpath("//div/b[contains(text(), '"+request+"')]"));
-        Assertions.assertTrue(result.size() > 10, "Количество элементов = "+result.size());
+        assertTrue(result.size() > 10, "Количество элементов = "+result.size());
     }
 
-    @AfterAll
+    @AfterSuite
     static void tearDown() {
         Init.closeDriver();
         homePage = null;

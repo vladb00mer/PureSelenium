@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PureSelenium" />
-        <module name="pure-selenium-junit5" />
+        <module name="pure-selenium-testng" />
       </profile>
     </annotationProcessing>
   </component>
