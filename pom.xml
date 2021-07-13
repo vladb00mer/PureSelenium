@@ -43,6 +43,11 @@
             <version>4.3.3</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-tools</artifactId>
+            <version>2.2.5</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -84,6 +89,20 @@
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.13</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <packageName>soap</packageName>
+                </configuration>
             </plugin>
         </plugins>
     </build>
