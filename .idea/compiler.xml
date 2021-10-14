@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PureSelenium" />
         <module name="pure-selenium-testng" />
+        <module name="DemoProject" />
       </profile>
     </annotationProcessing>
   </component>

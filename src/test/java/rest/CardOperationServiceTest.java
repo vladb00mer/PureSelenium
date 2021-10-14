@@ -11,7 +11,6 @@ import org.junit.jupiter.api.*;
 import service.DataBaseRequester;
 import service.StringFromXmlBuilder;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import static io.restassured.RestAssured.given;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -73,11 +72,7 @@ class CardOperationServiceTest {
 
         resultSet = dataBaseRequester.executeStatement("select");
 
-        try {
-            value = dataBaseRequester.getResultSetValue(resultSet, "ac");
-        } catch (SQLException throwable) {
-            throwable.printStackTrace();
-        }
+        value = dataBaseRequester.getResultSetValueByLabel(resultSet, "ac");
 
         Assertions.assertEquals("05", value, "!Значение не соответствует ожидаемому!");
     }

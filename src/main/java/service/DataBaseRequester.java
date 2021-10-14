@@ -40,14 +40,41 @@ public class DataBaseRequester {
         return resultSet;
     }
 
-    public String getResultSetValue(ResultSet resultSet, String label) throws SQLException {
+    public void updateStatement(String query) {
+
+        try {
+            connection.createStatement().executeUpdate(query);
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
+            System.out.println("!Update not executed!");
+        }
+    }
+
+    public String getResultSetValueByLabel(ResultSet resultSet, String label) {
 
         String value = null;
 
-        while (resultSet.next()) {
-
-            value = resultSet.getNString(label);
+        try {
+            if (resultSet.getRow() == 0) {
+                resultSet.next();
+            }
+            value = resultSet.getString(label);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
+        return value;
+    }
+
+    public String getResultSetValueByIndex(ResultSet resultSet, int index) {
+
+        String value = "!default!";
+
+        try {
+            value = String.valueOf(resultSet.next() ? resultSet.getString(index) : value);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
         return value;
     }
 
