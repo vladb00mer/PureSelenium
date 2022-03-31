@@ -8,13 +8,15 @@ import static io.restassured.RestAssured.given;
 
 public class RestRequester {
 
+    String value = "!Default!";
+
     public ValidatableResponse sendRequest(String url, int statusCode, String request) {
 
         Allure.addAttachment("request", request);
 
         return given()
-                .contentType("text/xml;charset=UTF-8")
-                .accept(ContentType.JSON)
+                .contentType(ContentType.XML)
+                .accept(ContentType.XML)
                 .log().all()
                 .baseUri(url)
                 .body(request)
@@ -27,16 +29,12 @@ public class RestRequester {
 
     public String getValueFromStringResponse(String response, String param) {
 
-        String value = "!Default!";
-
         value = response.substring(response.indexOf(">"), response.indexOf("</"+param+">"));
 
         return value;
     }
 
     public String getValueFromValidatableResponse(ValidatableResponse response, String param) {
-
-        String value = "!Default!";
 
         value = response.extract().xmlPath().getString("**.findAll { it.name() == 'tracking."+param+"' }");
 
