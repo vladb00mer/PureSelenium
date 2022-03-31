@@ -1,7 +1,6 @@
 package service;
 
 import oracle.jdbc.driver.OracleDriver;
-
 import java.sql.*;
 
 public class DataBaseRequester {
@@ -52,7 +51,7 @@ public class DataBaseRequester {
 
     public String getResultSetValueByLabel(ResultSet resultSet, String label) {
 
-        String value = null;
+        String value = "!Default!";
 
         try {
             if (resultSet.getRow() == 0) {
@@ -62,19 +61,6 @@ public class DataBaseRequester {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        return value;
-    }
-
-    public String getResultSetValueByIndex(ResultSet resultSet, int index) {
-
-        String value = "!default!";
-
-        try {
-            value = String.valueOf(resultSet.next() ? resultSet.getString(index) : value);
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-
         return value;
     }
 

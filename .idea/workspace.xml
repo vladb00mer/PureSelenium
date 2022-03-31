@@ -26,9 +26,16 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="some new">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="some new service classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/DateAndTimeBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/IdRequester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/RestRequester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/SanchezDataBaseRequester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/Waiter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DataBaseRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DataBaseRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StringFromXmlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StringFromXmlBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +104,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/service" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
@@ -121,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00040" summary="create workspace done">
-      <created>1567510263727</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1567510263727</updated>
     </task>
     <task id="LOCAL-00041" summary="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done">
       <created>1567601967043</created>
@@ -465,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631896194927</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="some new">
+      <created>1634194609908</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1634194609909</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="administrative pages begin" />
     <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; tested - ok" />
     <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; - ready to use from scratch (with test data creation)" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard - done" />
@@ -507,7 +514,8 @@
     <MESSAGE value="soap parsing jax-ws addition" />
     <MESSAGE value="remove webdriver" />
     <MESSAGE value="some new" />
-    <option name="LAST_COMMIT_MESSAGE" value="some new" />
+    <MESSAGE value="some new service classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some new service classes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$DemoTestHomePage.ic" NAME="DemoTestHomePage Coverage Results" MODIFIED="1566886077793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
