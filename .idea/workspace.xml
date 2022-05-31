@@ -27,10 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="some new service classes">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/IdRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IdRequester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/RestRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RestRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +58,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -124,13 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00042" summary="BMSQKNCT-11836&#10;Create Child Workspace from Custom WS&#10;done">
-      <created>1567608667635</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1567608667635</updated>
     </task>
     <task id="LOCAL-00043" summary="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard">
       <created>1567683820915</created>
@@ -468,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648717551641</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="some new service classes">
+      <created>1648718420407</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1648718420407</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
