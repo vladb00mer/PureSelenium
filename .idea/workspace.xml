@@ -27,11 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="some new service classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/streamApi/StreamApiStudy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wsdl/test.wsdl" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,48 +114,6 @@
       <recent name="workspace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StreamApiStudy.test1">
-    <configuration name="StreamApiStudy.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PureSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="streamApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="streamApi" />
-      <option name="MAIN_CLASS_NAME" value="streamApi.StreamApiStudy" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.testNumbers" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PureSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="backend" />
-      <option name="MAIN_CLASS_NAME" value="backend.CalculatorTest" />
-      <option name="METHOD_NAME" value="testNumbers" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.StreamApiStudy.test1" />
-        <item itemvalue="TestNG.CalculatorTest.testNumbers" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -169,13 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00044" summary="BMSQKNCT-11845 View of 'Create Workspace' modal opened from PD/View all WSs for Project that doesn't have any Process selected">
-      <created>1567695773862</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1567695773862</updated>
     </task>
     <task id="LOCAL-00045" summary="tests begin">
       <created>1567781478512</created>
@@ -513,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654005734946</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="some new service classes">
+      <created>1656441419499</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1656441419499</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

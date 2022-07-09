@@ -15,8 +15,8 @@ public class Init {
 
     private static WebDriver driver;
     private static final int TIMEOUT = 10;
-    private static String baseUrlAlpha = "https://sudift.delta.sbrf.ru/meta/gac/";
-    private static String baseUrlSigma = "http://nginx-gac.ci00706314-edevgen-gaac.apps.dev-gen.sigma.sbrf.ru/";
+    private static String baseUrlAlpha = "";
+    private static String baseUrlSigma = "";
     private static DesiredCapabilities capabilities;
     private static ChromeOptions chromeOptions;
 
@@ -45,7 +45,7 @@ public class Init {
         URL url = null;
 
         try {
-            url = new URL("http://selenium-hub.ci00706314-edevgen-gaac.apps.dev-gen.sigma.sbrf.ru/wd/hub");
+            url = new URL("");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
