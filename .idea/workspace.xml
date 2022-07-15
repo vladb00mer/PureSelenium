@@ -26,10 +26,19 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="some new service classes">
+    <list default="true" id="63bbf987-bb81-465a-92fc-43db24bdbc53" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wsdl/test.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DataBaseRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DataBaseRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DateAndTimeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DateAndTimeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IdRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IdRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/RestRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RestRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/SanchezDataBaseRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SanchezDataBaseRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StringFromXmlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StringFromXmlBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Waiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Waiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/backend/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rest/CardOperationServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml/CardOperationService/LockCardRequest.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556688524838</updated>
-    </task>
-    <task id="LOCAL-00045" summary="tests begin">
-      <created>1567781478512</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1567781478512</updated>
     </task>
     <task id="LOCAL-00046" summary="BMSQKNCT-11859 Keep automatic creation of the first nodes based on Process selection in Modify Project modal">
       <created>1567840059060</created>
@@ -469,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656441419499</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="fix">
+      <created>1657378817906</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1657378817907</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -486,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; tested - ok" />
     <MESSAGE value="&quot;BMSQKNCT-11836 Create Child Workspace from Custom WS&quot; - ready to use from scratch (with test data creation)" />
     <MESSAGE value="BMSQKNCT-11844 Create Workspace from Template from Project Dashboard - done" />
     <MESSAGE value="project name with current date&#10;project creation only once at suite" />
@@ -511,7 +519,8 @@
     <MESSAGE value="remove webdriver" />
     <MESSAGE value="some new" />
     <MESSAGE value="some new service classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some new service classes" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PureSelenium$DemoTestHomePage.ic" NAME="DemoTestHomePage Coverage Results" MODIFIED="1566886077793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

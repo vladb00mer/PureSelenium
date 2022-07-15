@@ -1,9 +1,12 @@
 package service;
 
+import io.qameta.allure.Step;
+
 import java.util.concurrent.TimeUnit;
 
 public class Waiter {
 
+    @Step("Ждем {milliSeconds} милисекунд")
     public static void waitForMilliSecs(long milliSeconds) {
         try {
             TimeUnit.MILLISECONDS.sleep(milliSeconds);
@@ -13,6 +16,7 @@ public class Waiter {
         }
     }
 
+    @Step("Ждем {milliSeconds} милисекунд")
     public static void waitForMsTs(long milliSeconds) {
         try {
             Thread.sleep(milliSeconds);

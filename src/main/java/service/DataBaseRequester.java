@@ -1,5 +1,6 @@
 package service;
 
+import io.qameta.allure.Step;
 import oracle.jdbc.driver.OracleDriver;
 import java.sql.*;
 
@@ -39,6 +40,7 @@ public class DataBaseRequester {
         return resultSet;
     }
 
+    @Step("Выполнение запроса Update к БД")
     public void updateStatement(String query) {
 
         try {
@@ -49,6 +51,7 @@ public class DataBaseRequester {
         }
     }
 
+    @Step("Получение значения по названию поля {label} из ответа SQL")
     public String getResultSetValueByLabel(ResultSet resultSet, String label) {
 
         String value = "!Default!";
