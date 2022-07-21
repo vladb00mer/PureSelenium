@@ -1,6 +1,7 @@
 *.iml
 .idea/
 target/
+src/test/java/ui/Java8Exc.java
 *.zip
 *.exe
 .logs/
